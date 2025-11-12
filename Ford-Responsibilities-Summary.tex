@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Page setup
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Moein Razavi}
+\lhead{Increased Responsibilities Summary}
+\cfoot{\thepage}
+
+% Colors
+\definecolor{darkblue}{RGB}{0,51,102}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries\color{darkblue}}{}{0em}{}
+
+% Custom list formatting
+\setlist[itemize]{leftmargin=1cm, itemsep=0.1cm}
+
+\begin{document}
+
+% Title
+\begin{center}
+{\LARGE\bfseries Summary of Increased Responsibilities} \\[0.3cm]
+{\large Moein Razavi, Data Scientist} \\[0.1cm]
+{\normalsize August 2023 - Present} \\[0.2cm]
+
+\end{center}
+
+\vspace{0.5cm}
+
+\section{Role Expansion Overview}
+
+\subsection{Initial Assignment (August 2023)}
+\begin{itemize}
+    \item Basic EV charging data analysis and processing tasks
+    \item Supporting existing analytics workflows under direct supervision
+    \item Standard reporting and documentation activities
+    \item Learning Ford's proprietary systems and development tools
+\end{itemize}
+
+\subsection{Current Expanded Responsibilities (Present)}
+
+\noindent\textbf{Cloud Infrastructure \& DevOps Leadership}
+\begin{itemize}
+    \item Design and deploy enterprise-scale cloud solutions using Google Cloud Run and Tekton CI/CD pipelines
+    \item Lead serverless architecture migrations with automated deployment and scaling capabilities
+    \item Manage production infrastructure serving critical Ford business applications
+\end{itemize}
+
+\noindent\textbf{Artificial Intelligence \& Machine Learning Innovation}
+\begin{itemize}
+    \item Architect intelligent agents for automated code complexity analysis, providing time/space optimization recommendations and GCP cost estimations via Ford's LLM API
+    \item Develop state-of-the-art transformer-based forecasting models (TFT, Autoformer, Informer) using Hugging Face frameworks for EV predictive analytics
+    \item Implement advanced hyperparameter optimization strategies using Optuna for enhanced model performance
+\end{itemize}
+
+\noindent\textbf{Enterprise Data Engineering \& Analytics}
+\begin{itemize}
+    \item Lead critical data processing pipelines for Ford's Energy Service Simulator using PySpark for large-scale data integration of simulator inputs and optimizer outputs
+    \item Design and implement Astro Airflow orchestration architecture for automated data workflows
+    \item Develop real-time EV discharge insights dashboards providing actionable business intelligence
+    \item Build and maintain REST APIs for relevancy and operational excellence dashboards enabling seamless integration with GDI\&A's Command Center systems
+\end{itemize}
+
+
+
+\end{document}

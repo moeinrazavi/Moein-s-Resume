@@ -1,0 +1,218 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%-------------------------------------------------------------------------------
+% CONFIGURATION
+%-------------------------------------------------------------------------------
+\moderncvstyle{banking}       % Modern, clean style
+\moderncvcolor{blue}          % Professional blue color
+\nopagenumbers{}              % Remove page numbers
+
+% Advanced packages for better typography and design
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}     % For modern icons
+\usepackage{microtype}        % Better typography
+\usepackage{xcolor}           % Extended color support
+\usepackage{tikz}             % For custom graphics
+\usepackage{enumitem}         % For custom list formatting
+
+% Page margins and layout
+\usepackage[scale=0.85, top=1.5cm, bottom=1.5cm]{geometry}
+
+% Custom colors
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{mediumgray}{RGB}{128,128,128}
+
+% Spacing adjustments
+\setlength{\parskip}{0.3em}
+\setlength{\hintscolumnwidth}{2.8cm}
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+
+% Custom section formatting
+\renewcommand*{\sectionfont}{\Large\bfseries\color{darkblue}}
+\renewcommand*{\subsectionfont}{\large\bfseries\color{darkblue}}
+
+% Custom bullet points
+\renewcommand{\labelitemi}{\textcolor{darkblue}{$\bullet$}}
+
+% Header customization
+\makeatletter
+\renewcommand*{\namefont}{\fontsize{28}{30}\bfseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{16}{18}\mdseries\upshape\color{mediumgray}}
+\makeatother
+
+%-------------------------------------------------------------------------------
+% PERSONAL DATA
+%-------------------------------------------------------------------------------
+\name{Moein}{Razavi}
+\title{\textcolor{mediumgray}{AI/ML Engineer \textbullet{} Data Scientist \textbullet{} Researcher}}
+
+% Contact information
+\address{College Station, TX, USA}{}{}
+\phone[mobile]{+1 (979) 676-7486}
+\email{razavi.moein94@gmail.com}
+\social[github]{moeinrazavi}
+\social[linkedin]{moein-razavi}
+
+% Simplified header with subtle line
+\makeatletter
+\AtBeginDocument{%
+  \hypersetup{
+    pdfauthor={\@firstname~\@lastname},
+    pdftitle={\@firstname~\@lastname~-- Resume},
+    pdfsubject={Resume},
+    pdfkeywords={Data Science, Machine Learning, AI, Engineering}
+  }
+}
+\makeatother
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\section{Professional Summary}
+\cvitem{}{%
+\begin{minipage}{\textwidth}
+\setlength{\parindent}{0pt}
+\textcolor{darkblue}{\textbf{Data Scientist and AI/ML specialist}} with \textbf{5+ years} of experience architecting and deploying advanced machine learning solutions, particularly in predictive modeling for Electric Vehicles (EVs) and energy systems. Proven expertise in deep learning, time-series forecasting (Autoformer, Informer, TFT), and MLOps within automotive and utility-relevant contexts, consistently driving innovation to improve predictive accuracy and operational efficiency. Adept at translating cutting-edge research into production-ready applications and eager to apply these skills to develop robust EV predictors for the utilities sector.
+\end{minipage}%
+}
+
+\subsection{Career Objectives}
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.1cm]
+    \item Develop and deploy advanced predictive models for Electric Vehicle (EV) behavior and energy consumption within the utilities sector
+    \item Leverage expertise in time-series forecasting and machine learning to optimize EV integration with energy grids
+    \item Translate data-driven insights into actionable strategies for utility companies navigating the transition to e-mobility
+    \item Contribute to innovative solutions at the intersection of EV technology, data science, and energy management
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+% CORE COMPETENCIES & SKILLS
+%-------------------------------------------------------------------------------
+\section{Core Competencies}
+
+% Custom skill item format
+\newcommand{\skillitem}[3]{%
+\cvitem{\textcolor{darkblue}{\textbf{#2}}}{#3}%
+}
+
+\skillitem{brain}{Machine Learning}{Expert in predictive modeling, deep learning, and advanced time-series forecasting (Autoformer, Informer, TFT, Hugging Face Transformers), with applications in Electric Vehicle (EV) analytics and energy systems.}
+
+\skillitem{infinity}{MLOps}{Proficient with CI/CD pipelines (Airflow, Tekton, AWS CodeDeploy), load balancing (AWS), EC2 Auto Scaling, model deployment using Nginx \& Gunicorn, and regulatory-compliant workflows.}
+
+\skillitem{database}{Data Engineering}{Hands-on experience with AWS (S3, EC2, CodeDeploy, Vertex AI, Dataproc), GCP, Docker, microservices, REST APIs, WebSocket integration, SQL, MongoDB, and ETL pipelines.}
+
+\skillitem{code}{Software Development}{Proficient in Python, Java, SwiftUI, and modern software engineering best practices. Experience using Optuna and Hugging Face Trainer API for hyperparameter optimization.}
+
+\skillitem{eye}{NLP \& Computer Vision}{Skilled in NLP (Hugging Face) and computer vision for real-time analytics \& remote monitoring applications.}
+
+\skillitem{search-plus}{Code Analysis \& Optimization}{Developed an intelligent agent for automated code complexity analysis, identifying performance bottlenecks and recommending actionable refactoring strategies to enhance software efficiency and maintainability.}
+
+\skillitem{users}{Communication \& Leadership}{Excellent technical writing, mentorship, and presentation skills for multidisciplinary teams and stakeholder engagement.}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\section{Professional Experience}
+
+\cventry{\textcolor{mediumgray}{Aug 2023 -- Present}}{\textbf{Data Scientist}}{\textcolor{darkblue}{\textbf{Ford Motor Company}}}{Detroit, MI, USA}{}{
+\vspace{0.2em}
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.15cm]
+    \item Spearheaded the design and implementation of a robust data ingestion and processing pipeline for large-scale EV charging session data, enabling advanced analytics and predictive modeling for charging behavior and energy demand
+    \item Built transformer-based time-series models (Autoformer, Informer, TFT) to improve parking probability predictions by \textcolor{darkblue}{\textbf{10\%}}, leveraging Hugging Face Transformers for modular experimentation
+    \item Deployed scalable microservices with Nginx \& Gunicorn on AWS, processing over \textcolor{darkblue}{\textbf{100K data points/sec}} and reducing overall latency by \textcolor{darkblue}{\textbf{25\%}} through optimized load balancing
+    \item Employed Optuna \& Hugging Face Trainer API for advanced hyperparameter tuning, cutting model training time by \textcolor{darkblue}{\textbf{40\%}} with multi-GPU and parallelized workflows
+    \item Integrated Google Cloud Vertex AI and Dataproc for large-scale distributed model training, ensuring seamless data ingestion and compliance with enterprise security standards
+    \item Implemented secure data pipelines and real-time dashboards, enabling business stakeholders to access production analytics in a compliant environment
+\end{itemize}
+\vspace{0.2em}
+\textcolor{darkblue}{\textbf{Key Projects:}}
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.1cm]
+    \item \textbf{Predictive Modeling for EV Energy Bill Reduction:} Developed an XGBoost regression model to predict percentage-based energy bill savings for EV users by optimizing Vehicle-to-Home/Grid (V2H/V2G) participation; engineered features from vehicle telematics, utility rate structures, parking behavior, and home energy consumption, achieving an \textcolor{darkblue}{\textbf{R-squared of 0.85}}
+    \item \textbf{ML-Driven EV Discharge Optimization:} Designed machine learning components to optimize EV battery discharge schedules for V2H/V2G services; analyzed discharge opportunity ratios, home energy load, and parking confidence to predict optimal discharge (kWh)
+\end{itemize}}
+
+\cventry{\textcolor{mediumgray}{Jun 2023 -- Sep 2024}}{\textbf{Software Engineer \& Computer Research Scientist}}{\textcolor{darkblue}{\textbf{CereVu Medical, Inc.}}}{San Francisco Bay Area, CA}{}{
+\vspace{0.2em}
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.15cm]
+    \item Architected an end-to-end SwiftUI-based iOS app for real-time biosignal monitoring, utilizing WebSocket for ultra-low-latency data transfer and AWS backend services
+    \item Led MLOps pipeline optimization (AWS CodeDeploy, Tekton), reducing deployment time by \textcolor{darkblue}{\textbf{30\%}} with automated rollbacks and EC2 Auto Scaling for global traffic bursts
+    \item Designed robust data infrastructure with MongoDB databases and integrated load balancing on AWS, enabling secure and scalable data exchange between iOS apps \& cloud services
+    \item Built and deployed AI algorithms (via Nginx \& Gunicorn) into wearable medical patches, boosting real-time patient monitoring accuracy by \textcolor{darkblue}{\textbf{15\%}}
+    \item Enhanced data processing throughput by \textcolor{darkblue}{\textbf{20\%}} using advanced concurrency patterns and microservices, accelerating biosignal interpretation and response times
+\end{itemize}}
+
+\cventry{\textcolor{mediumgray}{Sep 2021 -- May 2024}}{\textbf{Research Assistant}}{\textcolor{darkblue}{\textbf{Applied Cognitive Ergonomics Lab, Texas A\&M University}}}{College Station, TX}{}{
+\vspace{0.2em}
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.15cm]
+    \item Engineered deep learning pipelines for wearable-based stress detection, elevating accuracy by \textcolor{darkblue}{\textbf{76\%}} through personalized feature extraction and advanced sensor fusion
+    \item Developed \textit{GlucoseCoach} iOS app for real-time, personalized glucose monitoring, demonstrating significant improvements in patient adherence and health outcomes
+    \item Incorporated hybrid ML models and explainable AI, enhancing clinician trust and interpretability in high-stakes healthcare decisions
+    \item Leveraged computer vision algorithms for COVID-19 compliance monitoring, achieving \textcolor{darkblue}{\textbf{98\%}} accuracy in detecting face mask usage and social distancing
+\end{itemize}}
+
+\cventry{\textcolor{mediumgray}{Sep 2018 -- Aug 2021}}{\textbf{Research Assistant}}{\textcolor{darkblue}{\textbf{Department of Psychological \& Brain Sciences, Texas A\&M University}}}{College Station, TX}{}{
+\vspace{0.2em}
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.15cm]
+    \item Created \textit{OpenSync} to integrate EEG/ERP and biosensor data via WebSocket pipelines, enabling high-resolution, real-time behavioral analysis
+    \item Applied advanced signal processing to EEG datasets, improving data fidelity and uncovering critical insights into cognitive processes
+    \item Developed protocols unifying multiple biosensors for enriched cognitive workload assessments, accelerating research throughput across projects
+    \item Implemented AI-driven gait analysis (Conv-LSTM), reaching \textcolor{darkblue}{\textbf{93\%}} accuracy in identifying gait anomalies and potential fall risks
+\end{itemize}}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{\textcolor{mediumgray}{Aug 2021 -- Dec 2023}}{\textbf{Ph.D. in Industrial Engineering (Data Science)}}{\textcolor{darkblue}{\textbf{Texas A\&M University}}}{College Station, TX}{}{
+\vspace{0.1em}
+\textbf{Dissertation:} \textit{"Advancing Stress Detection: Real-Time, Naturalistic, and Personalized AI Approaches for Stress and Mental Disorder Detection"} \\[0.3em]
+\textcolor{darkblue}{\textbf{GPA: 4.0/4.0}} \hspace{0.5cm} \textit{Summa Cum Laude}
+}
+
+\cventry{\textcolor{mediumgray}{Aug 2019 -- May 2021}}{\textbf{M.S. in Computer Science}}{\textcolor{darkblue}{\textbf{Texas A\&M University}}}{College Station, TX}{}{
+\vspace{0.1em}
+\textbf{Relevant Coursework:} Machine Learning, Deep Learning, NLP, Algorithms, Pattern Recognition, Computer Vision, Database Systems, Reinforcement Learning, Data Mining \\[0.3em]
+\textcolor{darkblue}{\textbf{GPA: 4.0/4.0}} \hspace{0.5cm} \textit{Summa Cum Laude}
+}
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS
+%-------------------------------------------------------------------------------
+\section{Certifications}
+
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.2cm]
+    \item \textcolor{darkblue}{\textbf{Advanced MLOps Specialization}} (Coursera) -- End-to-end MLOps best practices with real-world applications
+    \item \textcolor{darkblue}{\textbf{NLP Specialization}} (Coursera) -- Advanced NLP techniques \& large-scale language modeling
+    \item \textcolor{darkblue}{\textbf{Deep Learning Specialization}} (DeepLearning.AI) -- Fundamentals \& advanced neural network architectures
+    \item \textcolor{darkblue}{\textbf{Bayesian Statistics}} (Coursera) -- Probabilistic modeling \& inference for data-driven decisions
+    \item \textcolor{darkblue}{\textbf{Generative AI with LLMs}} (AWS) -- Practical, hands-on generative AI methodologies
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------------------------------------------
+\section{Selected Publications}
+
+\newcommand{\pubitem}[3]{%
+\cvitem{\textcolor{darkblue}{\textbf{#1}}}{#2 \textcolor{mediumgray}{\textit{#3}}}%
+}
+
+\pubitem{2024}{\textbf{Razavi, M.}, et al. \textit{Integrated Eye-Tracking and EEG Data Collection and Synchronization for VR-Based Spatial Ability Assessments}.}{IHSI}
+
+\pubitem{2023}{\textbf{Razavi, M.}, et al. \textit{Machine Learning, Deep Learning, and Data Preprocessing for Stress Detection: A Scoping Review}.}{JMIR}
+
+\pubitem{2023}{Janfaza, V., Weston, K., \textbf{Razavi, M.}, et al. \textit{MERCURY: Accelerating DNN Training via Input Similarity}.}{IEEE HPCA}
+
+\pubitem{2023}{Kim, N., Grégoire, L., \textbf{Razavi, M.}, et al. \textit{Virtual Accident Curb Risk Habituation in Workers}.}{iScience}
+
+\pubitem{2022}{\textbf{Razavi, M.}, et al. \textit{Automatic Monitoring of Physical Distancing \& Mask Wearing}.}{SN Computer Science}
+
+\pubitem{2021}{\textbf{Razavi, M.}, et al. \textit{OpenSync: Synchronizing Multiple Measures in Neuroscience}.}{Journal of Neuroscience Methods}
+
+\end{document} 

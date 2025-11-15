@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  12 NOV 2025 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  12 NOV 2025 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,12 +1062,7 @@ LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 85.
-
-
-Underfull \hbox (badness 10000) detected at line 85
-\T1/cmss/m/n/8 .
- []
+(Font)              using `T1/cmss/bx/n' instead on input line 89.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
@@ -1075,11 +1070,15 @@ LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 103.
+(Font)              using `T1/cmss/bx/n' instead on input line 98.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 105.
+(Font)              using `T1/cmss/bx/n' instead on input line 100.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 102.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
@@ -1087,19 +1086,139 @@ LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 109.
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 111.
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
+(Font)              using `T1/cmss/bx/it' instead on input line 118.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 118.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 118.
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 113.
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 115.
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 118.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
+(Font)              using `T1/cmss/bx/it' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 127.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
+(Font)              using `T1/cmss/bx/it' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 135.
 
 
 
@@ -1116,175 +1235,47 @@ r/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/fontawesome5
 dvips/fontawesome5/fa5brands0.enc}]
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 117.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 122.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 (Font)              using `T1/cmss/bx/n' instead on input line 141.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
+(Font)              using `T1/cmss/bx/n' instead on input line 143.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 145.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 147.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 149.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 151.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 156.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 158.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
+(Font)              using `T1/cmss/bx/n' instead on input line 158.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
-(Font)              using `T1/cmss/bx/it' instead on input line 141.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 141.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 141.
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
+(Font)              using `T1/cmss/bx/it' instead on input line 158.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 141.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
-(Font)              using `T1/cmss/bx/it' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 151.
+(Font)              using `T1/cmss/bx/n' instead on input line 158.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
@@ -1304,233 +1295,35 @@ LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 160.
+(Font)              using `T1/cmss/bx/n' instead on input line 165.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 160.
+(Font)              using `T1/cmss/bx/n' instead on input line 167.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 160.
-
-
-
-[2]
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
+(Font)              using `T1/cmss/bx/n' instead on input line 167.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
-(Font)              using `T1/cmss/bx/it' instead on input line 169.
+(Font)              using `T1/cmss/bx/n' instead on input line 167.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
+(Font)              using `T1/cmss/bx/n' instead on input line 167.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 169.
+(Font)              using `T1/cmss/bx/n' instead on input line 172.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
 (Font)              using `T1/cmss/bx/n' instead on input line 174.
 
 
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 180.
 
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 180.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
-(Font)              using `T1/cmss/bx/it' instead on input line 180.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 180.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 180.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 186.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 186.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/it' undefined
-(Font)              using `T1/cmss/bx/it' instead on input line 186.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 186.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 186.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 191.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 193.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 195.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 197.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 203.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 203.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 203.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 203.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 205.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 207.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 209.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 211.
-
-
-
-[3]
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 213.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 215.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 217.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 222.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 225.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 226.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 227.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 228.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 229.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 235.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 241.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 241.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 243.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 243.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 245.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 245.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 247.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 247.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 249.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 249.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 251.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/bx/n' instead on input line 251.
-
-
-
-[4] (./Moein's-Resume.aux)
+[2] (./Moein's-Resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1540,43 +1333,57 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
 
-Package rerunfilecheck Info: File `Moein's-Resume.out' has not changed.
-(rerunfilecheck)             Checksum: 48267824FFA7478F8BE4DB4051E9CE3B;1057.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Moein's-Resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Moein's-Resume.out':
+(rerunfilecheck)             Before: E3A09589C022E17DC8BAC1A78C184751;1188
+(rerunfilecheck)             After:  26537557ADDA2D8E835D7CDC3F15D64F;921.
  ) 
 Here is how much of TeX's memory you used:
- 26987 strings out of 473190
- 523572 string characters out of 5705898
- 917037 words of memory out of 5000000
- 49611 multiletter control sequences out of 15000+600000
- 589024 words of font info for 156 fonts, out of 8000000 for 9000
+ 26936 strings out of 473190
+ 523043 string characters out of 5705898
+ 923037 words of memory out of 5000000
+ 49607 multiletter control sequences out of 15000+600000
+ 584903 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,11n,129p,1011b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fon
-tawesome5/FontAwesome5Brands-Regular.pfb></usr/local/Cellar/texlive/20250308_1/
-share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><
-/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fontaw
-esome5/FontAwesome5Free-Solid.pfb></usr/local/Cellar/texlive/20250308_1/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/
-20250308_1/share/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/Ce
-llar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.p
-fb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm
--super/sfsi1095.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/font
-s/type1/public/cm-super/sfso1095.pfb></usr/local/Cellar/texlive/20250308_1/shar
-e/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/Cellar/texliv
-e/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/lo
-cal/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss
-1095.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfss1728.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dis
-t/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/Cellar/texlive/20250308_
-1/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/Cellar/
-texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></
-usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfsx1440.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfsx2986.pfb>
-Output written on Moein's-Resume.pdf (4 pages, 344550 bytes).
+
+pdfTeX warning (dest): name{section*.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+</usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fonta
+wesome5/FontAwesome5Brands-Regular.pfb></usr/local/Cellar/texlive/20250308_1/sh
+are/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></u
+sr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fontawes
+ome5/FontAwesome5Free-Solid.pfb></usr/local/Cellar/texlive/20250308_1/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20
+250308_1/share/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/Cell
+ar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb
+></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfsi1095.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/
+type1/public/cm-super/sfso1095.pfb></usr/local/Cellar/texlive/20250308_1/share/
+texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/Cellar/texlive/
+20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/loca
+l/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss17
+28.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfsx1000.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/
+fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/Cellar/texlive/20250308_1/
+share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/Cellar/te
+xlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfsx2986.pfb>
+Output written on Moein's-Resume.pdf (2 pages, 308052 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 37965 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 500000)
+ 33877 words of extra memory for PDF output out of 35830 (max. 10000000)
 

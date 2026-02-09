@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  12 DEC 2025 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  9 FEB 2026 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,19 +1015,19 @@ ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
 n input line 112.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 125.
+nput line 128.
 
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontawesome5/u
 fontawesomefree3.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on i
-nput line 134.
+nput line 137.
 
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontawesome5/u
 fontawesomefree0.fd)
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/microtype/mt-c
 mr.cfg)
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 158.
+(Font)              scaled to size 9.0pt on input line 161.
 
 
 [1
@@ -1042,13 +1042,15 @@ local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/fontawesome5/f
 a5brands0.enc}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/
 dvips/fontawesome5/fa5free3.enc}{/usr/local/Cellar/texlive/20250308_1/share/tex
 mf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}]
+
+[2]
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 215.
+(Font)              scaled to size 10.0pt on input line 230.
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 215.
+(Font)              scaled to size 10.0pt on input line 230.
 
 
-[2] (./Moein's-Resume.aux)
+[3] (./Moein's-Resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1057,13 +1059,13 @@ Package rerunfilecheck Info: File `Moein's-Resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26136 strings out of 473190
- 508120 string characters out of 5705898
- 883867 words of memory out of 5000000
+ 26182 strings out of 473190
+ 509243 string characters out of 5705898
+ 882867 words of memory out of 5000000
  48811 multiletter control sequences out of 15000+600000
- 718403 words of font info for 173 fonts, out of 8000000 for 9000
+ 723899 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,9n,107p,1011b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,107p,1011b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fon
 tawesome5/FontAwesome5Brands-Regular.pfb></usr/local/Cellar/texlive/20250308_1/
 share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></u
@@ -1071,10 +1073,10 @@ sr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/impallari/ralew
 ay/Raleway-Bold.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/font
 s/type1/impallari/raleway/Raleway-Italic.pfb></usr/local/Cellar/texlive/2025030
 8_1/share/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb>
-Output written on Moein's-Resume.pdf (2 pages, 119693 bytes).
+Output written on Moein's-Resume.pdf (3 pages, 122227 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
  55309 words of extra memory for PDF output out of 61914 (max. 10000000)
 

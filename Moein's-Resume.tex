@@ -112,6 +112,9 @@
     \faLinkedin\enspace \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
     {\color{goldaccent}\textbf{·}}\enspace
     \faGithub\enspace \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}
+  }\\[0.3em]
+  {\color{accentcolor}\bfseries
+    \faGlobe\enspace \href{https://moeinrazavi.github.io/moeinrazavi/}{Portfolio: moeinrazavi.github.io/moeinrazavi}
   }
 \end{center}
 
@@ -125,7 +128,7 @@
 \cvsection{\faStar}{Professional Summary}
 
 {\color{darktext}
-\textbf{Senior AI/ML Engineer \& Full-Stack Developer} with \textbf{5+ years} building production ML systems, \textbf{Generative AI} applications, and cross-platform solutions. Expert in \textbf{Multi-Agent AI}, \textbf{LLMs} (GPT-4, Claude), \textbf{LangChain}, \textbf{RAG} (FAISS, ChromaDB), and time-series forecasting (\textbf{TFT, GluonTS}). Proficient in \textbf{Python, Swift/SwiftUI, TypeScript}; frameworks: \textbf{FastAPI, Flask, React, Next.js, React Native, Remix}. Strong Big Data skills (\textbf{BigQuery, PySpark, Airflow}) and Cloud expertise (\textbf{GCP, AWS, Azure}). Experienced with \textbf{Firebase, MongoDB, PostgreSQL, Prisma ORM}, and DevOps (\textbf{Docker, Kubernetes, Terraform}).
+\textbf{Senior AI/ML Engineer \& Full-Stack Developer} with \textbf{5+ years} building production ML systems, \textbf{Generative AI} applications, and cross-platform solutions. Expert in \textbf{Agentic AI} (\textbf{LangGraph, CrewAI, AutoGen, OpenAI Agents SDK}), \textbf{LLMs} (GPT-4, Claude, Gemini), \textbf{LangChain}, \textbf{MCP}, \textbf{RAG} (FAISS, ChromaDB), and time-series forecasting (\textbf{TFT, GluonTS}). Proficient in \textbf{Python, Swift/SwiftUI, TypeScript}; frameworks: \textbf{FastAPI, Flask, React, Next.js, React Native, Remix}. Strong Big Data skills (\textbf{BigQuery, PySpark, Airflow}) and Cloud expertise (\textbf{GCP, AWS, Azure}). Experienced with \textbf{Firebase, MongoDB, PostgreSQL, Prisma ORM}, and DevOps (\textbf{Docker, Kubernetes, Terraform}).
 }
 
 %-------------------------------------------------------------------------------
@@ -134,12 +137,12 @@
 \cvsection{\faCode}{Technical Expertise}
 
 \begin{tabularx}{\textwidth}{@{}>{\color{headerblue}\bfseries}l X@{}}
-AI/ML \& GenAI: & {\color{darktext}LLMs (GPT-4, Claude, Gemini) · LangChain · Multi-Agent Systems · RAG · Chain-of-Thought · Vector DBs (FAISS, ChromaDB, Pinecone) · TFT/Autoformer · GluonTS · Deep Learning (CNN, LSTM, Transformers)}\\[0.3em]
+AI/ML \& GenAI: & {\color{darktext}LLMs (GPT-4, Claude, Gemini, Ollama) · Agentic AI (LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel) · LangChain · MCP · RAG · Chain-of-Thought · Vector DBs (FAISS, ChromaDB, Pinecone) · LangSmith · Deep Learning (CNN, LSTM, Transformers) · TFT/GluonTS}\\[0.3em]
 Languages: & {\color{darktext}Python (Expert) · Swift/SwiftUI · TypeScript/JavaScript · Java · SQL · C++}\\[0.3em]
-Backend: & {\color{darktext}FastAPI · Flask · Django · Spring Boot · REST/WebSocket/GraphQL · MongoDB · PostgreSQL · Firebase/Firestore}\\[0.3em]
-Frontend: & {\color{darktext}React · Next.js · Remix · React Native (Expo) · SwiftUI/UIKit · Dash · Streamlit · Chainlit · Prisma ORM}\\[0.3em]
-Cloud \& Data: & {\color{darktext}GCP (Vertex AI, BigQuery, Cloud Run, Looker) · AWS (S3, EC2, Lambda) · Azure OpenAI · PySpark · Airflow}\\[0.3em]
-DevOps: & {\color{darktext}Docker · Kubernetes · Terraform · CI/CD (Tekton, GitHub Actions, Fastlane) · OAuth2/SAML · Plaid API · MapKit}\\
+Backend: & {\color{darktext}FastAPI · Flask · Django · Spring Boot · REST/WebSocket/GraphQL/gRPC · Pydantic · MongoDB · PostgreSQL · Firebase/Firestore}\\[0.3em]
+Frontend: & {\color{darktext}React · Next.js · Remix · React Native (Expo) · SwiftUI/UIKit · Gradio · Dash · Streamlit · Chainlit · Prisma ORM}\\[0.3em]
+Cloud \& Data: & {\color{darktext}GCP (Vertex AI, BigQuery, Cloud Run, Looker) · AWS (S3, EC2, Lambda) · Azure (OpenAI, AI Services) · Hugging Face · PySpark · Airflow}\\[0.3em]
+DevOps: & {\color{darktext}Docker · Kubernetes · Terraform · CI/CD (Tekton, GitHub Actions, Fastlane) · OpenTelemetry · OAuth2/SAML · Plaid API · MapKit}\\
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
@@ -159,9 +162,19 @@ DevOps: & {\color{darktext}Docker · Kubernetes · Terraform · CI/CD (Tekton, G
 
 \cventry{Jun 2023 -- Present}{Software Engineer \& AI/ML Researcher}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
 \begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
+  \item Developed \textbf{2 SwiftUI iOS apps} (Vitality, Clinical) with \textbf{CoreUSB/CoreBluetooth} hardware integration, on-device \textbf{ROPA pain algorithm}, and real-time biomarker visualization (\textbf{9 metrics}, Swift Charts)
+  \item Led \textbf{100\% UIKit-to-SwiftUI migration} of Clinical App; built multi-role platform (Patient, Physician, Admin) with iCloud sync, CSV export, and calibration system
   \item Built \textbf{Python REST APIs} (Flask, FastAPI) with WebSocket for real-time biosignal streaming (\textbf{10K+ connections})
-  \item Developed \textbf{SwiftUI iOS applications} (Vitality, Clinical App) with CoreUSB hardware integration and real-time charts
   \item Created \textbf{React/Next.js healthcare dashboard} with MongoDB, Redux, JWT auth, and real-time data visualization
+\end{itemize}
+}
+
+\cventry{2023 -- Present}{Founder \& Lead iOS Developer}{Clink Social · Inspecalytics}{Startups}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
+  \item Built \textbf{Clink Social}—SwiftUI social platform with \textbf{Firebase} (Auth, Firestore, Storage, FCM), real-time messaging (Combine), MapKit discovery, and fan-out timeline architecture
+  \item Developed \textbf{TypeScript/Node.js Cloud Functions} for feed aggregation, push notifications, content moderation, and trending algorithms
+  \item Created \textbf{Inspecalytics}—SwiftUI field inspection app with programmatic \textbf{Word/PowerPoint report generation} (OpenXML), custom camera with annotation, and offline-first architecture
+  \item Implemented \textbf{Fastlane + GitHub Actions} CI/CD pipelines for automated TestFlight deployments across both products
 \end{itemize}
 }
 
@@ -179,12 +192,14 @@ DevOps: & {\color{darktext}Docker · Kubernetes · Terraform · CI/CD (Tekton, G
 \cvsection{\faProjectDiagram}{Featured Projects}
 
 \noindent\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{headerblue}}l X@{}}
-Clink Social & {\color{darktext}Full-stack social platform: React Native (Expo) + Remix + Swift/SwiftUI iOS · Prisma, PostgreSQL, Firebase · Plaid payments, MapKit · Cloud Functions, Fastlane CI/CD}\\[0.3em]
+Clink Social & {\color{darktext}SwiftUI iOS + React Native (Expo) + Remix · Firebase (Auth, Firestore, FCM, Cloud Functions) · Real-time messaging · MapKit · Plaid payments · Fan-out timeline · Fastlane CI/CD}\\[0.3em]
+CereVu Healthcare & {\color{darktext}2 SwiftUI iOS apps + Next.js dashboard + Flask/FastAPI APIs · CoreUSB/CoreBluetooth · On-device ROPA pain algorithm · 9 biomarkers · iCloud sync}\\[0.3em]
+Inspecalytics & {\color{darktext}SwiftUI field inspection app · Programmatic Word/PowerPoint generation (OpenXML) · Custom camera with annotation · Offline-first · ZIP export · Template system}\\[0.3em]
 EV Agentic Chatbot & {\color{darktext}Multi-Agent AI: LangChain, Claude/GPT-4 · SQL + Document + LLM Agents · RAG (FAISS/ChromaDB) · BigQuery · Dash/Chainlit}\\[0.3em]
-Healthcare Platform & {\color{darktext}End-to-end medical system: SwiftUI iOS (Vitality, Clinical) + Next.js dashboard + Flask APIs · Real-time biosignals · MongoDB, Firebase}\\[0.3em]
-Inspecalytics & {\color{darktext}Inspection platform: SwiftUI iOS with Word/PowerPoint report generation · Web landing page · Image annotation}\\[0.3em]
 CLU Vision & {\color{darktext}Computer vision application: Streamlit + OpenCV + pandas · Real-time image processing and analysis dashboard}\\
 \end{tabularx}
+
+\newpage
 
 %-------------------------------------------------------------------------------
 % EDUCATION

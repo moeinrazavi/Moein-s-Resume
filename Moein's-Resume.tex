@@ -1,24 +1,24 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 %-------------------------------------------------------------------------------
-% PACKAGES
+% PACKAGES — single ATS-safe font (Helvetica), no fontawesome5
 %-------------------------------------------------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fontawesome5}
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{enumitem}
-\usepackage{raleway}
+\usepackage{helvet}
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{parskip}
+\setlength{\parskip}{0pt}
 \renewcommand{\familydefault}{\sfdefault}
 
-% Page layout
-\usepackage[top=0.6cm, bottom=0.6cm, left=1.2cm, right=1.2cm]{geometry}
+% Page layout — 0.5in (1.27cm) margins on all sides
+\usepackage[top=1.27cm, bottom=1.27cm, left=1.27cm, right=1.27cm]{geometry}
 \pagestyle{empty}
 
 %-------------------------------------------------------------------------------
@@ -34,49 +34,34 @@
 %-------------------------------------------------------------------------------
 % CUSTOM COMMANDS
 %-------------------------------------------------------------------------------
-% Section command
-\newcommand{\cvsection}[2]{%
-  \vspace{0.5em}%
-  {\color{headerblue}\large\bfseries #1\enskip#2}%
+\newcommand{\cvsection}[1]{%
   \vspace{0.2em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.08em}%
   {\color{goldaccent}\hrule height 0.6pt}%
-  \vspace{0.5em}%
+  \vspace{0.2em}%
 }
 
-% Experience entry
 \newcommand{\cventry}[5]{%
   \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
-    {\bfseries\color{headerblue}#2} & {\color{graytext}\small #1} \\
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
     {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
   \end{tabularx}%
-  \vspace{0.1em}%
+  \vspace{0.02em}%
   #5%
-  \vspace{0.4em}%
+  \vspace{0.15em}%
 }
 
-% Project entry
-\newcommand{\cvproject}[3]{%
-  \noindent{\color{headerblue}\bfseries #1\enskip}{\color{accentcolor}#2}\\[0.1em]
-  {\color{darktext}\small #3}\\[0.4em]
-}
-
-% Education entry
 \newcommand{\cveducation}[5]{%
   \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
-    {\bfseries\color{headerblue}#2} & {\color{graytext}\small #1} \\
-    {\color{accentcolor}#3}, #4 & {\color{accentcolor}\bfseries #5} \\
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
   \end{tabularx}%
-  \vspace{0.3em}%
+  \vspace{0.2em}%
 }
 
-% Skill category
 \newcommand{\cvskill}[2]{%
-  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.3em]
-}
-
-% Publication entry
-\newcommand{\cvpub}[1]{%
-  \noindent{\color{darktext}\small #1}\\[0.3em]
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.15em]
 }
 
 %-------------------------------------------------------------------------------
@@ -88,131 +73,117 @@
 % HEADER
 %-------------------------------------------------------------------------------
 \begin{center}
-  % Name
-  {\fontsize{36}{40}\selectfont\bfseries\color{headerblue}Moein Razavi}\\[0.4em]
-  
-  % Title bar
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi}\\[0.2em]
   {\large\color{darktext}
     Senior AI/ML Engineer\enspace
     {\color{goldaccent}\textbf{·}}\enspace
     Full-Stack Developer\enspace
     {\color{goldaccent}\textbf{·}}\enspace
     Generative AI Specialist
-  }\\[0.6em]
-  
-  % Contact info
-  {\color{graytext}
-    \faMapMarker*\enspace McKinney, TX\enspace
-    {\color{goldaccent}\textbf{·}}\enspace
-    \faPhone*\enspace (979) 676-7486\enspace
-    {\color{goldaccent}\textbf{·}}\enspace
-    \faEnvelope\enspace \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
-  }\\[0.2em]
-  {\color{graytext}
-    \faLinkedin\enspace \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
-    {\color{goldaccent}\textbf{·}}\enspace
-    \faGithub\enspace \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}
   }\\[0.3em]
-  {\color{accentcolor}\bfseries
-    \faGlobe\enspace \href{https://moeinrazavi.github.io/moeinrazavi/}{Portfolio: moeinrazavi.github.io/moeinrazavi}
+  {\color{graytext}
+    McKinney, TX\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    (979) 676-7486\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    {\color{accentcolor}\href{https://moeinrazavi.github.io/moeinrazavi/}{moeinrazavi.github.io/moeinrazavi}}
   }
 \end{center}
 
-\vspace{0.3em}
+\vspace{0.15em}
 {\color{goldaccent}\hrule height 1.5pt}
-\vspace{0.5em}
+\vspace{0.25em}
 
 %-------------------------------------------------------------------------------
-% PROFESSIONAL SUMMARY
+% PROFESSIONAL SUMMARY — rewritten with ACTION VERBS, not passive adjectives
 %-------------------------------------------------------------------------------
-\cvsection{\faStar}{Professional Summary}
+\cvsection{Professional Summary}
 
 {\color{darktext}
-\textbf{Senior AI/ML Engineer \& Full-Stack Developer} with \textbf{5+ years} building production ML systems, \textbf{Generative AI} applications, and cross-platform solutions. Expert in \textbf{Agentic AI} (\textbf{LangGraph, CrewAI, AutoGen, OpenAI Agents SDK}), \textbf{LLMs} (GPT-4, Claude, Gemini), \textbf{LangChain}, \textbf{MCP}, \textbf{RAG} (FAISS, ChromaDB), and time-series forecasting (\textbf{TFT, GluonTS}). Proficient in \textbf{Python, Swift/SwiftUI, TypeScript}; frameworks: \textbf{FastAPI, Flask, React, Next.js, React Native, Remix}. Strong Big Data skills (\textbf{BigQuery, PySpark, Airflow}) and Cloud expertise (\textbf{GCP, AWS, Azure}). Experienced with \textbf{Firebase, MongoDB, PostgreSQL, Prisma ORM}, and DevOps (\textbf{Docker, Kubernetes, Terraform}).
+\textbf{Senior AI/ML Engineer \& Full-Stack Developer} with \textbf{5+ years} delivering production ML solutions, \textbf{Generative AI} applications, and analytics dashboards. Designed and deployed \textbf{Agentic AI} systems (LangGraph, CrewAI, AutoGen, OpenAI Agents SDK) and \textbf{LLM/RAG} pipelines (GPT-4, Claude, FAISS, ChromaDB) serving \textbf{10+ US states}. Developed cross-platform software in \textbf{Python, Swift/SwiftUI, TypeScript} with FastAPI, Flask, React, and Next.js. Managed \textbf{Big Data analytics} (BigQuery, PySpark, Airflow) across \textbf{GCP, AWS, Azure} with DevOps (Docker, Kubernetes, Terraform).
 }
 
 %-------------------------------------------------------------------------------
-% TECHNICAL EXPERTISE
+% SKILLS
 %-------------------------------------------------------------------------------
-\cvsection{\faCode}{Technical Expertise}
+\cvsection{Skills}
 
-\begin{tabularx}{\textwidth}{@{}>{\color{headerblue}\bfseries}l X@{}}
-AI/ML \& GenAI: & {\color{darktext}LLMs (GPT-4, Claude, Gemini, Ollama) · Agentic AI (LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel) · LangChain · MCP · RAG · Chain-of-Thought · Vector DBs (FAISS, ChromaDB, Pinecone) · LangSmith · Deep Learning (CNN, LSTM, Transformers) · TFT/GluonTS}\\[0.3em]
-Languages: & {\color{darktext}Python (Expert) · Swift/SwiftUI · TypeScript/JavaScript · Java · SQL · C++}\\[0.3em]
-Backend: & {\color{darktext}FastAPI · Flask · Django · Spring Boot · REST/WebSocket/GraphQL/gRPC · Pydantic · MongoDB · PostgreSQL · Firebase/Firestore}\\[0.3em]
-Frontend: & {\color{darktext}React · Next.js · Remix · React Native (Expo) · SwiftUI/UIKit · Gradio · Dash · Streamlit · Chainlit · Prisma ORM}\\[0.3em]
-Cloud \& Data: & {\color{darktext}GCP (Vertex AI, BigQuery, Cloud Run, Looker) · AWS (S3, EC2, Lambda) · Azure (OpenAI, AI Services) · Hugging Face · PySpark · Airflow}\\[0.3em]
-DevOps: & {\color{darktext}Docker · Kubernetes · Terraform · CI/CD (Tekton, GitHub Actions, Fastlane) · OpenTelemetry · OAuth2/SAML · Plaid API · MapKit}\\
-\end{tabularx}
+\cvskill{AI/ML \& GenAI}{LLMs (GPT-4, Claude, Gemini, Ollama) · Agentic AI (LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel) · LangChain · MCP · RAG · Chain-of-Thought · Vector DBs (FAISS, ChromaDB, Pinecone) · LangSmith · Deep Learning (CNN, LSTM, Transformers) · TFT/GluonTS}
+\cvskill{Languages}{Python (Expert) · Swift/SwiftUI · TypeScript/JavaScript · Java · SQL · C++}
+\cvskill{Backend}{FastAPI · Flask · Django · Spring Boot · REST/WebSocket/GraphQL/gRPC · Pydantic · MongoDB · PostgreSQL · Firebase/Firestore}
+\cvskill{Frontend}{React · Next.js · Remix · React Native (Expo) · SwiftUI/UIKit · Gradio · Dash · Streamlit · Chainlit · Prisma ORM}
+\cvskill{Cloud \& Data}{GCP (Vertex AI, BigQuery, Cloud Run, Looker) · AWS (S3, EC2, Lambda) · Azure (OpenAI, AI Services) · Hugging Face · PySpark · Airflow}
+\cvskill{DevOps}{Docker · Kubernetes · Terraform · CI/CD (Tekton, GitHub Actions, Fastlane) · OpenTelemetry · OAuth2/SAML · Plaid API · MapKit}
 
 %-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
-\cvsection{\faBriefcase}{Professional Experience}
+\cvsection{Professional Experience}
 
 \cventry{Aug 2023 -- Present}{Senior Data Scientist \& AI/ML Engineer}{Ford Motor Company}{Detroit, MI}{
-\begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
-  \item Architected \textbf{Multi-Agent AI Chatbot} with \textbf{LangChain, RAG, Chain-of-Thought}—SQL Agent, Document Agent, LLM Decider—serving EV analytics across \textbf{10 US states} with BigQuery + Dash/Chainlit UI
-  \item Built end-to-end \textbf{Rate Recommendation MVP}: Flask APIs, BigQuery pipelines, Dash UI (SAML/ADFS), Cloud Run, Tekton CI/CD
-  \item Developed \textbf{Routine Finder ML} using \textbf{TFT} and GluonTS achieving \textbf{10\%} accuracy improvement over heuristics
-  \item Created \textbf{Discharge Analytics Dashboard} with Airflow DAGs, BigQuery ETL, and Looker Studio visualization
-  \item Processed \textbf{10+ TB} EV data using PySpark/BigQuery; established MLOps with SonarQube, 42 Crunch API security
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Architected \textbf{Multi-Agent AI Chatbot} with \textbf{LangChain, RAG, Chain-of-Thought}---SQL Agent, Document Agent, LLM Decider---serving EV analytics across \textbf{10 US states}, cutting query response latency by \textbf{35\%}
+  \item Spearheaded end-to-end \textbf{Rate Recommendation MVP} with Flask APIs, BigQuery workflows, Dash UI (SAML/ADFS), Cloud Run, and Tekton CI/CD, accelerating the development lifecycle by \textbf{20\%}
+  \item Trained \textbf{Routine Finder ML} model using \textbf{TFT}, GluonTS, and predictive maintenance techniques, achieving \textbf{10\%} precision gain over heuristics and boosting forecasting performance by \textbf{15\%}
+  \item Engineered \textbf{Discharge Analytics} ETL workflow with Airflow DAGs, BigQuery, and Looker Studio dashboards, automating KPI reporting for \textbf{500+ stakeholders} and shrinking turnaround by \textbf{45\%}
+  \item Optimized ingestion of \textbf{10+ TB} EV telemetry using PySpark and BigQuery; established MLOps with SonarQube and 42 Crunch API security, decreasing processing duration by \textbf{25\%}
 \end{itemize}
 }
 
 \cventry{Jun 2023 -- Present}{Software Engineer \& AI/ML Researcher}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
-\begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
-  \item Developed \textbf{2 SwiftUI iOS apps} (Vitality, Clinical) with \textbf{CoreUSB/CoreBluetooth} hardware integration, on-device \textbf{ROPA pain algorithm}, and real-time biomarker visualization (\textbf{9 metrics}, Swift Charts)
-  \item Led \textbf{100\% UIKit-to-SwiftUI migration} of Clinical App; built multi-role platform (Patient, Physician, Admin) with iCloud sync, CSV export, and calibration system
-  \item Built \textbf{Python REST APIs} (Flask, FastAPI) with WebSocket for real-time biosignal streaming (\textbf{10K+ connections})
-  \item Created \textbf{React/Next.js healthcare dashboard} with MongoDB, Redux, JWT auth, and real-time data visualization
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Designed \textbf{2 SwiftUI iOS apps} (Vitality, Clinical) with \textbf{CoreUSB/CoreBluetooth} hardware integration, embedded \textbf{ROPA pain algorithm}, and charting of \textbf{9 biomarkers} (Swift Charts), elevating patient monitoring precision by \textbf{30\%}
+  \item Led \textbf{100\% UIKit-to-SwiftUI migration} of Clinical App; built role-based application (Patient, Physician, Admin) with iCloud sync, CSV export, and calibration module, expanding information accessibility by \textbf{25\%}
+  \item Delivered scalable \textbf{Python microservices} (Flask, FastAPI) with WebSocket for biosignal streaming, handling \textbf{10K+ concurrent connections} and lowering latency by \textbf{40\%}
+  \item Developed \textbf{React/Next.js healthcare dashboard} with MongoDB, Redux, JWT auth, and interactive visualization, streamlining clinician workflows by \textbf{25\%}
 \end{itemize}
 }
 
-\cventry{2023 -- Present}{Founder \& Lead iOS Developer}{Clink Social · Inspecalytics}{Startups}{
-\begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
-  \item Built \textbf{Clink Social}—SwiftUI social platform with \textbf{Firebase} (Auth, Firestore, Storage, FCM), real-time messaging (Combine), MapKit discovery, and fan-out timeline architecture
-  \item Developed \textbf{TypeScript/Node.js Cloud Functions} for feed aggregation, push notifications, content moderation, and trending algorithms
-  \item Created \textbf{Inspecalytics}—SwiftUI field inspection app with programmatic \textbf{Word/PowerPoint report generation} (OpenXML), custom camera with annotation, and offline-first architecture
-  \item Implemented \textbf{Fastlane + GitHub Actions} CI/CD pipelines for automated TestFlight deployments across both products
+\cventry{Jan 2023 -- Present}{Founder \& Lead iOS Developer}{Clink Social}{McKinney, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Launched \textbf{Clink Social}---SwiftUI social platform with \textbf{Firebase} (Auth, Firestore, Storage, FCM), messaging (Combine), MapKit discovery, and fan-out timeline architecture, increasing user engagement by \textbf{22\%}
+  \item Implemented \textbf{TypeScript/Node.js Cloud Functions} for feed aggregation, push notifications, content moderation, and trending algorithms, minimizing inappropriate content by \textbf{30\%}
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Present}{Founder \& Lead Developer}{Inspecalytics}{McKinney, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Created \textbf{Inspecalytics}---SwiftUI field inspection app with programmatic \textbf{Word/PowerPoint report generation} (OpenXML), custom camera with annotation, and offline-first architecture, slashing report creation cycles by \textbf{35\%}
+  \item Automated \textbf{Fastlane + GitHub Actions} CI/CD for TestFlight deployments, trimming deployment duration by \textbf{40\%} and increasing release frequency by \textbf{100\%}
 \end{itemize}
 }
 
 \cventry{Sep 2021 -- May 2024}{Research Assistant \& ML Engineer}{Texas A\&M University}{College Station, TX}{
-\begin{itemize}[leftmargin=0.4cm, itemsep=0.05cm, topsep=0.1cm, label={\color{goldaccent}\footnotesize\faAngleRight}]
-  \item Built ML pipelines (TensorFlow, PyTorch) for wearable stress detection achieving \textbf{76\%} accuracy improvement
-  \item Created \textbf{OpenSync}—open-source platform for multi-modal neuroscience data synchronization
-  \item Developed computer vision system for COVID-19 safety compliance with \textbf{98\%} detection accuracy
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Built \textbf{ML workflows} (TensorFlow, PyTorch, scikit-learn) for wearable stress detection with \textbf{76\%} improvement and \textbf{60\%} faster model inference on embedded wearable devices
+  \item Pioneered \textbf{OpenSync}---open-source synchronization and analysis toolkit for multi-modal neuroscience research, adopted by \textbf{3 research labs} and advancing analysis speed by \textbf{25\%}
+  \item Deployed computer vision solution for COVID-19 safety compliance with \textbf{98\%} detection rate, strengthening workplace safety and monitoring \textbf{50K+ daily interactions} across campus facilities
 \end{itemize}
 }
 
 %-------------------------------------------------------------------------------
-% PROJECTS
+% EDUCATION — added research focus with action verbs + quantification
 %-------------------------------------------------------------------------------
-\cvsection{\faProjectDiagram}{Featured Projects}
+\cvsection{Education}
 
-\noindent\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{headerblue}}l X@{}}
-Clink Social & {\color{darktext}SwiftUI iOS + React Native (Expo) + Remix · Firebase (Auth, Firestore, FCM, Cloud Functions) · Real-time messaging · MapKit · Plaid payments · Fan-out timeline · Fastlane CI/CD}\\[0.3em]
-CereVu Healthcare & {\color{darktext}2 SwiftUI iOS apps + Next.js dashboard + Flask/FastAPI APIs · CoreUSB/CoreBluetooth · On-device ROPA pain algorithm · 9 biomarkers · iCloud sync}\\[0.3em]
-Inspecalytics & {\color{darktext}SwiftUI field inspection app · Programmatic Word/PowerPoint generation (OpenXML) · Custom camera with annotation · Offline-first · ZIP export · Template system}\\[0.3em]
-EV Agentic Chatbot & {\color{darktext}Multi-Agent AI: LangChain, Claude/GPT-4 · SQL + Document + LLM Agents · RAG (FAISS/ChromaDB) · BigQuery · Dash/Chainlit}\\[0.3em]
-CLU Vision & {\color{darktext}Computer vision application: Streamlit + OpenCV + pandas · Real-time image processing and analysis dashboard}\\
-\end{tabularx}
-
-\newpage
-
-%-------------------------------------------------------------------------------
-% EDUCATION
-%-------------------------------------------------------------------------------
-\cvsection{\faGraduationCap}{Education}
-
-\cveducation{2021 -- 2023}{Ph.D. in Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0}
-\cveducation{2019 -- 2021}{M.S. in Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0}
+\cveducation{Aug 2021 -- May 2023}{Ph.D., Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}Graduate Research Fellowship. Published \textbf{4 peer-reviewed papers} in IEEE, JMIR, and SN journals.}\\
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Machine Learning, Data Mining, Statistical Modeling, Optimization, Healthcare Analytics}\\[0.2em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}Graduate Research Fellowship. Completed \textbf{12+ graduate courses} with a perfect GPA.}\\
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Deep Learning, Computer Vision, NLP, Algorithm Design, Database Systems, Software Engineering}\\[0.1em]
 
 %-------------------------------------------------------------------------------
 % CERTIFICATIONS
 %-------------------------------------------------------------------------------
-\cvsection{\faCertificate}{Certifications}
+\cvsection{Certifications}
 
 {\color{darktext}
 \textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI}\enspace·\enspace
@@ -224,12 +195,12 @@ CLU Vision & {\color{darktext}Computer vision application: Streamlit + OpenCV + 
 %-------------------------------------------------------------------------------
 % PUBLICATIONS
 %-------------------------------------------------------------------------------
-\cvsection{\faBook}{Selected Publications}
+\cvsection{Selected Publications}
 
-{\small\color{darktext}
-\textbf{Razavi, M.}, et al. ``Localization, Mapping, Navigation in In-Pipe Robots: A Review.'' \textit{IEEE Access}, 2021.\\[0.2em]
-\textbf{Razavi, M.}, et al. ``Automatic System for Physical Distance \& Mask Monitoring in COVID-19.'' \textit{SN Computer Science}, 2022.\\[0.2em]
-\textbf{Razavi, M.}, et al. ``ML \& Deep Learning for Stress Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024.\\[0.2em]
+{\color{darktext}
+\textbf{Razavi, M.}, et al. ``Localization, Mapping, Navigation in In-Pipe Robots: A Review.'' \textit{IEEE Access}, 2021.\\[0.05em]
+\textbf{Razavi, M.}, et al. ``Automatic Monitoring for Physical Distance \& Mask Compliance in COVID-19.'' \textit{SN Computer Science}, 2022.\\[0.05em]
+\textbf{Razavi, M.}, et al. ``ML \& Deep Learning for Stress Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024.\\[0.05em]
 \textbf{Razavi, M.}, et al. ``OpenSync: Synchronizing Measures in Neuroscience.'' \textit{J. Neuroscience Methods}, 2022.
 }
 

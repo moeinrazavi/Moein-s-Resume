@@ -1,0 +1,220 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+%-------------------------------------------------------------------------------
+% PACKAGES — ATS-safe: standard font, no graphics packages, clean text layer
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top=1.27cm, bottom=1.27cm, left=1.27cm, right=1.27cm]{geometry}
+\pagestyle{empty}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={Moein Razavi},
+  pdftitle={Moein Razavi - Senior iOS Engineer Resume},
+  pdfsubject={Senior iOS Engineer},
+  pdfkeywords={iOS, Swift, SwiftUI, UIKit, Computer Vision SDK, Apple Vision, Core ML, Xcode Cloud, TestFlight, OAuth, JWT, HealthKit, Wearable Data, Performance Optimization, Design System}
+}
+
+%-------------------------------------------------------------------------------
+% COLORS
+%-------------------------------------------------------------------------------
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{goldaccent}{RGB}{180,140,60}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{140,140,140}
+
+%-------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+\newcommand{\cvsection}[1]{%
+  \vspace{0.2em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.08em}%
+  {\color{goldaccent}\hrule height 0.6pt}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #5%
+  \vspace{0.15em}%
+}
+
+\newcommand{\cvproject}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#1} & {\color{graytext}#2} \\
+    {\color{accentcolor}#3} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #4%
+  \vspace{0.15em}%
+}
+
+\newcommand{\cveducation}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
+  \end{tabularx}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\cvskill}[2]{%
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.15em]
+}
+
+%-------------------------------------------------------------------------------
+% DOCUMENT
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi}\\[0.2em]
+  {\large\color{darktext}
+    Senior iOS Engineer\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Swift / SwiftUI / UIKit\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Computer Vision \& Wearable Health
+  }\\[0.3em]
+  {\color{graytext}
+    McKinney, TX\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    (979) 676-7486\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://moeinrazavi.github.io/moeinrazavi/}{moeinrazavi.github.io/moeinrazavi}
+  }
+\end{center}
+
+\vspace{0.15em}
+{\color{goldaccent}\hrule height 1.5pt}
+\vspace{0.25em}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+{\color{darktext}
+\textbf{Senior iOS Engineer} with \textbf{5+ years} shipping production Swift apps for \textbf{iPhone and iPad}, including App Store and \textbf{enterprise distribution}. Built and maintained an in-house \textbf{computer vision SDK} (Swift + \textbf{Apple Vision}, real-time video processing, \textbf{Core ML}) and \textbf{wearable-data integrations} (CoreBluetooth, \textbf{HealthKit}, heart-rate/HRV pipelines). Led a complete \textbf{UIKit-to-SwiftUI design system rollout}, refactoring legacy UIKit into \textbf{modular, testable SwiftUI components}. Architected \textbf{CI/CD} with \textbf{Xcode Cloud}, Fastlane, GitHub Actions, and \textbf{TestFlight}. Built a secure \textbf{QR-based cross-device login} flow with \textbf{OAuth 2.0 / JWT token exchange}. Proven in \textbf{performance optimization}---memory profiling, frame rate tuning, launch time reduction, and latency optimization. Backend fluency in Python (Flask, FastAPI), TypeScript/Node.js, Firebase, and Supabase.
+}
+
+%-------------------------------------------------------------------------------
+% TECHNICAL SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\cvskill{iOS \& Apple Frameworks}{Swift (Expert), SwiftUI, UIKit, Combine, Swift Concurrency (async/await), Core ML, Apple Vision, AVFoundation, CoreBluetooth, HealthKit, Swift Charts, MapKit, Core Data, CloudKit, Core Animation, Grand Central Dispatch (GCD)}
+\cvskill{Architecture \& Design Patterns}{Model-View-ViewModel (MVVM), MVVM-Coordinator, Clean Architecture, Protocol-Oriented Programming (POP), Dependency Injection, Coordinator Pattern, UIKit/SwiftUI Bridging, Modular Components, Offline-First}
+\cvskill{CI/CD \& Quality Assurance}{Xcode Cloud, Fastlane, GitHub Actions, TestFlight, App Store Connect API, Enterprise Distribution, XCTest, XCUITest, Snapshot Testing, Code Coverage, Code Review Standards, Automated Code Signing}
+\cvskill{Computer Vision \& ML}{Apple Vision Framework, Core ML, Real-Time Video Processing, Object Detection (YOLO), On-Device ML Inference, OpenCV, TensorFlow, PyTorch, coremltools}
+\cvskill{Authentication \& Security}{OAuth 2.0, JSON Web Token (JWT), Token Exchange, QR-Based Cross-Device Login, Sign in with Apple, Firebase Auth, Keychain Services, Biometric Authentication (Face ID / Touch ID), Certificate Pinning}
+\cvskill{Wearable \& Health Data}{HealthKit, CoreBluetooth (BLE), Heart Rate / HRV Pipelines, Biosignal Processing, Wearable Sensor Fusion (Accelerometer, Gyroscope, PPG), Real-Time Streaming, Apple Watch}
+\cvskill{Backend \& APIs}{Flask, FastAPI, Node.js, Firebase (Auth, Firestore, FCM), Supabase (PostgreSQL, Auth, Storage), REST, WebSocket, GraphQL, MongoDB, Redis, Docker}
+\cvskill{Performance \& Animation}{Memory Profiling (Instruments), FPS / Frame Rate Optimization, Launch Time Reduction, Latency Reduction, Motion and Animation Polish, Image/Asset Caching, Concurrent Transfer Pipelines}
+\cvskill{Programming Languages}{Swift (Expert), Python, TypeScript, JavaScript, C++, Java, SQL}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\cventry{Jun 2023 -- Sep 2024}{Software Engineer --- iOS \& AI/ML}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Architected \textbf{2 SwiftUI iOS apps} (Vitality + Clinical, iPhone + iPad) with a shared \textbf{design system} (colors, typography, spacing, animation presets) and \textbf{CoreBluetooth} hardware integration (Nordic UART BLE) for real-time biosignal acquisition from medical wearable patches, charting \textbf{9 biomarkers} via Swift Charts.
+  \item Led \textbf{100\% UIKit-to-SwiftUI design system rollout}: planned and executed the full migrate of the Clinical App, \textbf{bridging} legacy UIKit and SwiftUI and \textbf{refactoring} into \textbf{modular, testable SwiftUI components} with MVVM-Coordinator, role-based views (Patient, Physician, Admin), iCloud sync, and CSV export, expanding data accessibility by \textbf{25\%}.
+  \item Developed a \textbf{computer vision SDK} embedding the ROPA pain-detection algorithm with on-device ML inference via \textbf{Core ML} and a C++ signal-processing bridge, processing \textbf{real-time video} sensor data at \textbf{60 FPS} with optimized \textbf{memory} footprint; extended \textbf{test coverage} with XCTest unit and UI tests, elevating monitoring precision by \textbf{30\%}.
+  \item Implemented \textbf{Sign in with Apple} + \textbf{OAuth 2.0 / JWT token exchange} with secure storage (\textbf{Keychain Services}), \textbf{biometric authentication} (Face ID), and role-based access control across patient and clinician workflows.
+  \item Owned the full \textbf{iOS release pipeline}: CI/CD, \textbf{TestFlight}, and public/\textbf{enterprise distribution}; built the companion \textbf{Flask REST API} backend (MongoDB time-series, Redis caching, PyJWT Apple token verification) deployed via \textbf{Docker} on AWS EC2 with \textbf{GitHub Actions}, Gunicorn, and Nginx.
+  \item Paired with design on \textbf{motion and animation polish} (spring animations, scale/opacity transitions) and with backend on \textbf{REST} and \textbf{GraphQL} API contracts; participated in \textbf{code review} standards to maintain quality across the team.
+\end{itemize}
+}
+
+\cventry{Aug 2023 -- Present}{Senior Data Scientist \& AI/ML Engineer}{Ford Motor Company}{Detroit, MI}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Designed an \textbf{AI-powered data ingestion agent} (Vertex AI Gemini) with two-stage architecture, replacing \textasciitilde500 lines of utility-specific parsers with a single universal pipeline across CSV, Excel, PDF, XML, and HTML formats.
+  \item Architected a \textbf{multi-agent AI system} with LangChain, RAG, and vector databases serving EV analytics across \textbf{10 US states}; built \textbf{FastAPI} microservices on Cloud Run with \textbf{OAuth 2.0}, BigQuery, and Tekton CI/CD.
+\end{itemize}
+}
+
+\cventry{Sep 2021 -- May 2024}{Research Assistant \& ML Engineer}{Texas A\&M University}{College Station, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Designed a dual-branch transformer for \textbf{wearable} stress detection from \textbf{Apple Watch heart-rate and HRV data} (\textbf{256 participants}, 1.7B sensor rows), achieving \textbf{AUC 0.993}; deployed on-device via \textbf{Core ML} with \textbf{60\% faster inference}, building a full \textbf{HealthKit}-ready real-time inference pipeline in Swift.
+  \item Deployed a \textbf{computer vision} system for \textbf{real-time video processing}---physical distancing and mask detection using deep learning object detection---achieving \textbf{98\% accuracy} monitoring \textbf{50,000+ daily interactions}.
+  \item Developed an iOS app (GlucoseCoach) with Flask backend for real-time personalized glucose monitoring, applying explainable AI (SHAP, LIME) for clinical decision support.
+  \item Created \textbf{OpenSync}---an open-source real-time synchronization platform for multi-modal \textbf{wearable} sensor data (EEG, eye-tracking, biosensors) via WebSocket pipelines, adopted by \textbf{3 research labs} (31 citations).
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% FREELANCE PROJECTS
+%-------------------------------------------------------------------------------
+\cvsection{Freelance Projects}
+
+\cvproject{Clink Social --- SwiftUI Social Platform}{Jan 2023 -- Present}{Freelance iOS Development}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Built Clink Social from scratch as a \textbf{SwiftUI} social platform with \textbf{Firebase} (Auth, Firestore, Storage, FCM), real-time messaging via \textbf{Combine}, MapKit discovery, and fan-out timeline architecture, increasing user engagement by \textbf{22\%}.
+  \item Implemented a secure \textbf{QR-based cross-device} sign-in flow: generate a time-boxed QR code in the mobile app, scan on a second device, exchange tokens with the API via \textbf{OAuth 2.0 / JWT}, and log users in instantly, reducing sign-in friction by \textbf{35\%}.
+  \item Developed TypeScript/Node.js Cloud Functions for feed aggregation, push notifications, and content moderation, reducing inappropriate content by \textbf{30\%}.
+\end{itemize}
+}
+
+\cvproject{Inspecalytics --- Full-Stack Field Inspection Platform (iOS + Web)}{Jan 2023 -- Present}{Freelance Full-Stack Development}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Built a \textbf{cross-platform inspection platform}---SwiftUI iOS app (iPhone + iPad) and companion web app---sharing a unified \textbf{Supabase} backend for seamless data sync; engineered custom \textbf{AVFoundation} camera with annotation overlays and in-app \textbf{DOCX/PPTX/XLSX report generation}, slashing report time by \textbf{35\%}.
+  \item Implemented \textbf{offline-first architecture} with SHA-256 change detection, debounced cloud sync, and concurrent image transfers; automated \textbf{Fastlane + GitHub Actions} CI/CD for \textbf{TestFlight}, cutting deployment time by \textbf{40\%}.
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveducation{Aug 2021 -- Dec 2023}{Ph.D., Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}Published \textbf{4 peer-reviewed papers} (IEEE, JMIR, SN Computer Science). \textit{Focus:} Computer Vision, Wearable ML, Health Data.}\\[0.15em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Deep Learning, Computer Vision, NLP, Algorithm Design, Database Systems, Software Engineering.}\\[0.1em]
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Certifications}
+
+{\color{darktext}
+\textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI}\enspace·\enspace
+\textbf{Machine Learning Specialization} {\color{lightgray}-- Stanford University}\enspace·\enspace
+\textbf{NLP Specialization} {\color{lightgray}-- DeepLearning.AI}\enspace·\enspace
+\textbf{Generative AI with LLMs} {\color{lightgray}-- AWS}
+}
+
+\end{document}

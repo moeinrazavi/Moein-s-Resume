@@ -1,0 +1,263 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{etaremune}
+\usepackage{fancyhdr}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top=1.8cm, bottom=1.8cm, left=2.0cm, right=2.0cm]{geometry}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\color{graytext}\small\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\pagestyle{plain}
+
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{100,100,100}
+\definecolor{rulecolor}{RGB}{25,55,95}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.7em}%
+  {\color{headerblue}\large\bfseries\MakeUppercase{#1}}%
+  \vspace{0.12em}%
+  {\color{rulecolor}\hrule height 0.7pt}%
+  \vspace{0.35em}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#1} & {\color{graytext}\small #2} \\
+    {\color{accentcolor}\small #3} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #4%
+  \vspace{0.25em}%
+}
+
+\newcommand{\cvskillrow}[2]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\color{headerblue}\bfseries\raggedright}p{4.2cm} X@{}}
+    #1 & {\color{darktext}#2}\\
+  \end{tabularx}\vspace{0.08em}%
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accentcolor,
+  urlcolor=accentcolor,
+  citecolor=accentcolor
+}
+
+\begin{document}
+
+%% ========== HEADER ==========
+\begin{center}
+  {\fontsize{22}{26}\selectfont\bfseries\color{headerblue}Moein Razavi, Ph.D.}\\[0.35em]
+  {\color{graytext}\small
+    McKinney, TX\enspace$\mid$\enspace
+    (979) 676-7486\enspace$\mid$\enspace
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{accentcolor}\small
+    \href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{Google Scholar}\enspace$\mid$\enspace
+    \href{https://github.com/moeinrazavi}{GitHub}\enspace$\mid$\enspace
+    \href{https://linkedin.com/in/moein-razavi}{LinkedIn}\enspace$\mid$\enspace
+    \href{https://moeinrazavi.github.io/moeinrazavi/}{Portfolio}
+  }
+\end{center}
+
+\vspace{0.15em}
+{\color{rulecolor}\hrule height 1.0pt}
+\vspace{0.1em}
+
+%% ========== RESEARCH INTERESTS ==========
+\cvsection{Research Interests}
+
+{\color{darktext}\small
+AI-driven disaster and urban resilience $\cdot$ Multi-modal machine learning for crisis sensing and response $\cdot$ Graph neural networks and foundation models for infrastructure networks $\cdot$ Spatial machine learning for hazard mapping and community vulnerability assessment $\cdot$ Reasoning models and agentic AI for disaster decision support $\cdot$ Retrieval-augmented generation (RAG) over tabular and geospatial data $\cdot$ Vision-language models for post-disaster damage assessment $\cdot$ Real-time physiological and environmental monitoring with wearable/IoT systems $\cdot$ Deep learning for time-series forecasting in energy and critical infrastructure
+}
+
+%% ========== EDUCATION ==========
+\cvsection{Education}
+
+\cventry{Ph.D., Industrial Engineering (Data Science Concentration)}{Aug 2021 -- Dec 2023}{Texas A\&M University, College Station, TX}{
+\vspace{0.05em}
+\noindent\hspace{0.4cm}{\color{darktext}\small\textbf{Dissertation:} \textit{``Advancing Stress Detection: Real-Time, Naturalistic, and Personalized AI}}\\
+\hspace{0.4cm}{\color{darktext}\small\textit{Approaches for Stress and Mental Disorder Detection''}}\\[0.06em]
+\hspace{0.4cm}{\color{darktext}\small\textbf{GPA:} 4.0/4.0 \enspace$\cdot$\enspace Dean's List \enspace$\cdot$\enspace Graduate Research Fellowship \enspace$\cdot$\enspace \textbf{Advisor:} Dr. Farzan Sasangohar}\\[0.04em]
+\hspace{0.4cm}{\color{graytext}\small\textit{Coursework:} Machine Learning, Statistical Modeling, Data Mining, Optimization, Healthcare Analytics}
+}
+
+\cventry{M.S., Computer Science}{Aug 2019 -- May 2021}{Texas A\&M University, College Station, TX}{
+\vspace{0.05em}
+\noindent\hspace{0.4cm}{\color{darktext}\small\textbf{GPA:} 4.0/4.0 \enspace$\cdot$\enspace Dean's List \enspace$\cdot$\enspace Graduate Research Fellowship}\\[0.04em]
+\hspace{0.4cm}{\color{graytext}\small\textit{Coursework:} Deep Learning, Computer Vision, NLP, Reinforcement Learning, Algorithm Design,}\\
+\hspace{0.4cm}{\color{graytext}\small Pattern Recognition, Database Systems, Software Engineering, Data Mining}
+}
+
+%% ========== RESEARCH EXPERIENCE ==========
+\cvsection{Research Experience}
+
+\cventry{Research Assistant --- Applied Cognitive Ergonomics Lab}{Sep 2021 -- May 2024}{Texas A\&M University, College Station, TX \enspace$\mid$\enspace Advisor: Dr. Farzan Sasangohar}{
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item Designed a \textbf{dual-branch transformer architecture} with 1D-CNN tokenizer, rotary positional encoding (RoPE), cross-attention fusion, stochastic depth, and focal loss for wearable stress detection from Apple Watch heart rate; achieved \textbf{AUC 0.993} and \textbf{F1 0.965} in 5-fold group cross-validation with on-device deployment via Core ML
+  \item Engineered \textbf{18-feature HRV extraction pipeline} (time-domain statistics, frequency-domain LF/HF power) from photoplethysmography signals, unifying 5 heterogeneous study datasets with Mixup/CutMix augmentation and asymmetric focal loss
+  \item Published \textbf{comprehensive scoping review} of 200+ studies on ML/DL techniques for stress detection (\textbf{79 citations}), synthesizing best practices for data preprocessing, feature engineering, and model selection in mental health monitoring
+  \item Deployed \textbf{computer vision system} for COVID-19 safety compliance---physical distancing and mask detection---using deep learning object detection, achieving \textbf{98\% accuracy} monitoring \textbf{50K+ daily interactions} on campus (\textbf{76 citations})
+  \item Co-authored \textbf{spatial ML study} combining unsupervised and supervised learning to identify county-level COVID-19 risk factors across the US, integrating demographic, socioeconomic, and spatial features (\textbf{9 citations}, \textit{SERR})
+  \item Developed iOS app (\textit{GlucoseCoach}) with Flask backend for real-time personalized glucose monitoring; applied \textbf{explainable AI} (SHAP, LIME) to clinical ML models for interpretable healthcare decision-making
+\end{itemize}
+}
+
+\cventry{Research Assistant --- Dept. of Psychological \& Brain Sciences}{Sep 2018 -- Aug 2021}{Texas A\&M University, College Station, TX \enspace$\mid$\enspace Advisor: Dr. Takashi Yamauchi}{
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item Created \textbf{OpenSync}---open-source platform for real-time synchronization and analysis of \textbf{multi-modal neuroscience data} (EEG/ERP, eye-tracking, biosensors) via WebSocket pipelines; adopted by \textbf{3 research labs} (\textbf{31 citations}, \textit{J. Neuroscience Methods})
+  \item Implemented advanced \textbf{signal processing algorithms} for EEG data preprocessing, filtering, and feature extraction; integrated eye-tracking and EEG for VR-based spatial ability assessments (\textbf{5 citations}, \textit{IHSI 2024})
+  \item Built \textbf{Conv-LSTM deep learning model} for gait analysis achieving 93\% accuracy in anomaly detection and fall risk prediction from time-series sensor data
+  \item Developed \textbf{ML-based mouse-tracking system} for cognitive conflict detection and ADHD diagnosis, published at ACII 2019 (\textbf{19 citations}); co-authored studies on emotion assessment via cursor tracking (\textbf{19 citations})
+  \item Contributed to \textbf{VR-based behavioral intervention} for reducing risk habituation to struck-by hazards in construction, published in \textit{iScience} (\textbf{20 citations}) and \textit{Journal of Vision}
+\end{itemize}
+}
+
+%% ========== PROFESSIONAL EXPERIENCE ==========
+\cvsection{Industry Experience}
+
+\cventry{Senior Data Scientist \& AI/ML Engineer}{Aug 2023 -- Present}{Ford Motor Company, Detroit, MI}{
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item Architected \textbf{multi-agent AI system} with LangChain, \textbf{RAG over tabular data} (BigQuery), chain-of-thought reasoning, and vector databases (FAISS, ChromaDB)---SQL Agent, Document Agent, LLM Decider---serving EV analytics across \textbf{10 US states}
+  \item Developed \textbf{Generative AI reasoning agent} using LLMs for automated code complexity analysis with GCP cost estimation, reducing manual review time by 60\%
+  \item Trained \textbf{transformer-based time-series forecasting} models (TFT, Autoformer, Informer) with Hugging Face and Optuna hyperparameter optimization; improved EV predictions by 10\% and cut training time by 40\% via distributed GPU computing on Vertex AI
+  \item Built \textbf{XGBoost regression models} for EV energy bill prediction by engineering features from vehicle telematics, utility rates, parking behavior, and home energy consumption (\textbf{R\textsuperscript{2} = 0.85})
+  \item Engineered \textbf{large-scale data pipelines} processing 10+ TB of EV telemetry using PySpark, BigQuery, and Airflow DAGs; built Looker Studio dashboards automating KPI reporting for 500+ stakeholders
+  \item Deployed production \textbf{MLOps infrastructure} on GCP (Cloud Run, Vertex AI, Dataproc) with CI/CD (Tekton, Airflow), Terraform IaC for multi-environment deployments, achieving 99.9\% uptime
+\end{itemize}
+}
+
+\cventry{Software Engineer \& AI/ML Researcher}{Jun 2023 -- Sep 2024}{CereVu Medical, Inc., San Francisco Bay Area, CA}{
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item Designed \textbf{2 SwiftUI iOS applications} for real-time biosignal monitoring with CoreUSB/CoreBluetooth hardware integration, embedded \textbf{ROPA pain detection algorithm}, and charting of 9 biomarkers
+  \item Deployed \textbf{deep learning models} (LSTM, CNN) on wearable medical patches, improving patient monitoring accuracy by 15\% across 400+ patients in 5 clinical studies
+  \item Built scalable Python microservices (Flask, FastAPI) with WebSocket for biosignal streaming handling \textbf{10K+ concurrent connections}; created React/Next.js clinical analytics dashboard
+  \item Designed \textbf{MLOps CI/CD pipelines} (Tekton, AWS CodeDeploy) with Docker, achieving 30\% faster release cycles with zero-downtime deployments and automated rollbacks
+\end{itemize}
+}
+
+%% ========== PUBLICATIONS ==========
+\cvsection{Publications}
+\vspace{0.1em}
+{\small\color{darktext}
+\textit{Google Scholar: \textbf{470+ total citations} \enspace$\cdot$\enspace h-index: 10 \enspace$\cdot$\enspace \href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{scholar.google.com/citations?user=wj\_qWaQAAAAJ}}
+}\\[0.35em]
+
+\noindent\textbf{\color{headerblue}Journal Articles \& Book Chapters}\\[0.15em]
+
+{\color{darktext}\small
+\begin{etaremune}[leftmargin=0.6cm, itemsep=0.12cm, topsep=0.08cm]
+
+\item \textbf{Razavi, M.}, Ziyadidegan, S., Mahmoudzadeh, A., Kazeminasab, S., et al. ``Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review.'' \textit{JMIR Mental Health}, 11(1), e53714, 2024. \textbf{[79 citations]}
+
+\item Salehi, F., \textbf{Razavi, M.}, Smith, M., Dixit, M. ``Integrated Eye-Tracking and EEG Data Collection and Synchronization for VR-Based Spatial Ability Assessments.'' \textit{Intelligent Human Systems Integration (IHSI)}, Vol.~119, pp.~348--360, 2024. \textbf{[5 citations]}
+
+\item Kim, N., Gr\'{e}goire, L., \textbf{Razavi, M.}, Yan, N., Ahn, C.R., Anderson, B.A. ``Virtual Accident Curb Risk Habituation in Workers by Restoring Sensory Responses to Real-World Warning.'' \textit{iScience}, 26(1), 2023. \textbf{[20 citations]}
+
+\item Janfaza, V., Weston, K., \textbf{Razavi, M.}, Mandal, S., et al. ``Mercury: Accelerating DNN Training by Exploiting Input Similarity.'' \textit{IEEE Int'l Symposium on High-Performance Computer Architecture (HPCA)}, 2023. \textbf{[11 citations]}
+
+\item \textbf{Razavi, M.}, McDonald, A., Mehta, R., Sasangohar, F. ``Evaluating Mental Stress Among College Students Using Heart Rate and Hand Acceleration Data from Wearable Sensors.'' \textit{arXiv:2309.11097}, 2023. \textbf{[26 citations]}
+
+\item Ziyadidegan, S., \textbf{Razavi, M.}, Pesarakli, H., Javid, A.H., Erraguntla, M. ``Factors Affecting the COVID-19 Risk in the US Counties: An Innovative Approach by Combining Unsupervised and Supervised Learning.'' \textit{Stochastic Environmental Research and Risk Assessment}, 36(5), 1469--1484, 2022. \textbf{[9 citations]}
+
+\item \textbf{Razavi, M.}, Janfaza, V., Yamauchi, T., et al. ``OpenSync: An Open-Source Platform for Synchronizing Multiple Measures in Neuroscience Experiments.'' \textit{Journal of Neuroscience Methods}, 369, 109458, 2022. \textbf{[31 citations]}
+
+\item \textbf{Razavi, M.}, Alikhani, H., Janfaza, V., Sadeghi, B., Alikhani, E. ``An Automatic System to Monitor the Physical Distance and Face Mask Wearing of Construction Workers in COVID-19 Pandemic.'' \textit{SN Computer Science}, 2022. \textbf{[76 citations]}
+
+\item Kazeminasab, S., Sadeghi, N., Janfaza, V., \textbf{Razavi, M.}, et al. ``Localization, Mapping, Navigation, and Inspection Methods in In-Pipe Robots: A Review.'' \textit{IEEE Access}, 9, 162035--162058, 2021. \textbf{[85 citations]}
+
+\end{etaremune}
+}
+\vspace{0.2em}
+
+\noindent\textbf{\color{headerblue}Peer-Reviewed Conference Papers}\\[0.15em]
+
+{\color{darktext}\small
+\begin{etaremune}[leftmargin=0.6cm, itemsep=0.12cm, topsep=0.08cm]
+
+\item Gr\'{e}goire, L., Kim, N., \textbf{Razavi, M.}, Yan, N., Ahn, C., Anderson, B. ``Reducing Risk Habituation to Struck-By Hazards in a Road Construction Environment Using Virtual Reality Behavioral Intervention.'' \textit{Journal of Vision}, 22(14), 4180, 2022.
+
+\item \textbf{Razavi, M.}, Ziyadidegan, S., Sasangohar, F. ``Machine Learning Techniques for Prediction of Stress-Related Mental Disorders: A Scoping Review.'' \textit{Proc. HFES Annual Meeting}, 66(1), 2022. \textbf{[14 citations]}
+
+\item Ziyadidegan, S., \textbf{Razavi, M.}, Sasangohar, F. ``Analyzing Physiological Responses to Quantify Anxiety Disorders: A Scoping Review.'' \textit{Proc. HFES Annual Meeting}, 66(1), 2022. \textbf{[7 citations]}
+
+\item Kazeminasab, S., Janfaza, V., \textbf{Razavi, M.}, Banks, M.K. ``Smart Navigation for an In-Pipe Robot Through Multi-Phase Motion Control and Particle Filtering.'' \textit{IEEE Int'l Conf. Electro-Information Technology}, 2021. \textbf{[22 citations]}
+
+\item Leontyev, A., Yamauchi, T., \textbf{Razavi, M.} ``ML-SST: ML-Based Mouse Tracking Enhances Adult ADHD Diagnosis.'' \textit{8th Int'l Conf. Affective Computing and Intelligent Interaction (ACII)}, 2019. \textbf{[19 citations]}
+
+\item Yamauchi, T., Leontyev, A., \textbf{Razavi, M.} ``Assessing Emotion by Mouse-Cursor Tracking: Theoretical and Empirical Rationales.'' \textit{8th Int'l Conf. ACII}, 2019. \textbf{[19 citations]}
+
+\item Yamauchi, T., Leontyev, A., \textbf{Razavi, M.} ``Mouse Tracking Measures Reveal Cognitive Conflicts Better than Response Time and Accuracy Measures.'' \textit{Proc. Cognitive Science Society}, 41, 2019. \textbf{[16 citations]}
+
+\end{etaremune}
+}
+
+%% ========== TECHNICAL SKILLS ==========
+\cvsection{Technical Skills}
+
+\cvskillrow{ML \& Deep Learning}{PyTorch, TensorFlow, scikit-learn, XGBoost, Hugging Face Transformers, time-series forecasting (TFT, Autoformer, Informer), CNNs, LSTMs, Conv-LSTMs, attention mechanisms, GNNs, Optuna, SHAP/LIME}
+
+\cvskillrow{Generative AI \& LLMs}{GPT-4, Claude, Gemini, LangChain, LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, RAG (FAISS, ChromaDB, Pinecone), Chain-of-Thought, prompt engineering, fine-tuning}
+
+\cvskillrow{Computer Vision \& NLP}{OpenCV, object detection (YOLO, Faster R-CNN), image segmentation, Hugging Face NLP, text classification, sentiment analysis, vision-language pipelines}
+
+\cvskillrow{Programming}{Python (Expert), Swift/SwiftUI, TypeScript/JavaScript, Java, SQL, C++, R, MATLAB}
+
+\cvskillrow{Data \& Big Data}{BigQuery, PySpark, Apache Airflow, Hadoop, ETL/ELT pipelines, pandas, NumPy, SciPy, data warehousing, query optimization}
+
+\cvskillrow{Cloud \& MLOps}{GCP (Vertex AI, Cloud Run, Dataproc), AWS (S3, EC2, SageMaker), Azure (OpenAI, Cognitive Services), Docker, Kubernetes, Terraform, CI/CD (Tekton, GitHub Actions)}
+
+\cvskillrow{Web \& App Development}{FastAPI, Flask, Django, React, Next.js, Spring Boot, SwiftUI, Core ML, REST, WebSocket, GraphQL, gRPC}
+
+\cvskillrow{Signal Processing}{EEG/ERP analysis, HRV feature extraction, biosignal filtering, multi-sensor fusion, photoplethysmography (PPG), wearable data pipelines}
+
+%% ========== AWARDS & HONORS ==========
+\cvsection{Awards \& Honors}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item \textbf{Graduate Research Fellowship}, Texas A\&M University, 2019--2023
+  \item \textbf{Dean's List} (all semesters), Texas A\&M University, 2019--2023
+  \item \textbf{Perfect GPA (4.0/4.0)} across both Ph.D. and M.S. programs, Texas A\&M University
+\end{itemize}
+
+%% ========== CERTIFICATIONS ==========
+\cvsection{Certifications}
+
+{\small\color{darktext}
+\textbf{Deep Learning Specialization} {\color{graytext}-- DeepLearning.AI}\enspace$\cdot$\enspace
+\textbf{Machine Learning Specialization} {\color{graytext}-- Stanford}\enspace$\cdot$\enspace
+\textbf{NLP Specialization} {\color{graytext}-- DeepLearning.AI}\enspace$\cdot$\enspace
+\textbf{Advanced MLOps} {\color{graytext}-- Coursera}\enspace$\cdot$\enspace
+\textbf{Generative AI with LLMs} {\color{graytext}-- AWS}\enspace$\cdot$\enspace
+\textbf{Bayesian Statistics} {\color{graytext}-- Coursera}
+}
+
+%% ========== PROFESSIONAL SERVICE ==========
+\cvsection{Professional Service \& Memberships}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=0.05cm, topsep=0.06cm, label={\color{headerblue}\textbullet}]
+  \item Peer reviewer for research publications in machine learning and healthcare analytics
+  \item Member, Institute of Electrical and Electronics Engineers (IEEE)
+  \item Member, Human Factors and Ergonomics Society (HFES)
+\end{itemize}
+
+\end{document}

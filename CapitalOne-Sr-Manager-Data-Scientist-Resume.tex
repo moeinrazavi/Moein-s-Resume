@@ -1,0 +1,204 @@
+\documentclass[11pt,letterpaper]{article}
+
+%-------------------------------------------------------------------------------
+% PACKAGES — single ATS-safe font (Helvetica), no fontawesome5
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Page layout — 0.5in (1.27cm) margins on all sides
+\usepackage[top=1.27cm, bottom=1.27cm, left=1.27cm, right=1.27cm]{geometry}
+\pagestyle{empty}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={Moein Razavi},
+  pdftitle={Moein Razavi - Senior Manager Data Scientist Resume},
+  pdfsubject={Senior Manager Data Scientist - Credit Review},
+  pdfkeywords={Data Science, Machine Learning, Python, Spark, AWS, Statistical Modeling, Credit Risk, Deep Learning, NLP, Classification, Clustering, Time Series, ROC, Confusion Matrix}
+}
+
+%-------------------------------------------------------------------------------
+% COLORS
+%-------------------------------------------------------------------------------
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{goldaccent}{RGB}{180,140,60}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{140,140,140}
+
+%-------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+\newcommand{\cvsection}[1]{%
+  \vspace{0.2em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.08em}%
+  {\color{goldaccent}\hrule height 0.6pt}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #5%
+  \vspace{0.15em}%
+}
+
+\newcommand{\cveducation}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
+  \end{tabularx}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\cvskill}[2]{%
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.15em]
+}
+
+%-------------------------------------------------------------------------------
+% DOCUMENT
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi, Ph.D.}\\[0.2em]
+  {\large\color{darktext}
+    Senior Data Scientist\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Machine Learning \& Statistical Modeling\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Risk Analytics
+  }\\[0.3em]
+  {\color{graytext}
+    McKinney, TX\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    (979) 676-7486\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    {\color{accentcolor}\href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{Google Scholar (470+ citations)}}
+  }
+\end{center}
+
+\vspace{0.15em}
+{\color{goldaccent}\hrule height 1.5pt}
+\vspace{0.25em}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+{\color{darktext}
+\textbf{Ph.D. Data Scientist \& ML Leader} with \textbf{5+ years} building, validating, and deploying production statistical and machine learning models at scale. Published researcher (\textbf{470+ citations}, 16 papers) with deep expertise in \textbf{classification, time-series forecasting, clustering, deep learning}, and model validation (ROC/AUC, confusion matrices, backtesting). Proven ability to translate complex analytical work into \textbf{tangible business outcomes} for cross-functional stakeholders. Hands-on with \textbf{Python, PySpark, SQL, AWS, H2O}, and cloud-native data platforms processing \textbf{10+ TB} datasets. Passionate about \textbf{challenging production models}, identifying failure modes, and driving data-driven decision-making in risk management.
+}
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\cvskill{Statistical Modeling \& ML}{Classification (Logistic Regression, XGBoost, Random Forest, SVM) · Clustering (K-Means, DBSCAN, Hierarchical) · Time-Series Forecasting (TFT, ARIMA, Prophet, Autoformer) · Deep Learning (CNN, LSTM, Transformers) · Sentiment Analysis · NLP · Model Validation (ROC/AUC, Confusion Matrix, Precision/Recall, Backtesting, Cross-Validation)}
+\cvskill{Languages \& Tools}{Python (Expert) · R · SQL · Scala · Java · PySpark · pandas · NumPy · SciPy · scikit-learn · XGBoost · PyTorch · TensorFlow · H2O · Hugging Face · Optuna · SHAP/LIME}
+\cvskill{Cloud \& Big Data}{AWS (S3, EC2, SageMaker, Lambda, Redshift) · GCP (BigQuery, Vertex AI, Cloud Run, Dataproc) · Azure · Spark · Hadoop · Airflow · Conda · Docker · Kubernetes · Terraform}
+\cvskill{Data \& Databases}{Relational Databases (PostgreSQL, MySQL, BigQuery, Redshift) · MongoDB · ETL/ELT Pipelines · Data Warehousing · Query Optimization · Looker · Dash · Streamlit}
+\cvskill{Leadership \& Communication}{Cross-Functional Collaboration · Stakeholder Presentations · Talent Development · Mentoring · Agile/Scrum · Technical Documentation · Research Publication}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\cventry{Aug 2023 -- Present}{Senior Data Scientist \& ML Engineer}{Ford Motor Company}{Detroit, MI}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Led development of \textbf{challenger models} using XGBoost, gradient-boosted trees, and deep learning to benchmark against production forecasting systems, identifying model drift and improving prediction accuracy by \textbf{10\%} across EV energy analytics
+  \item Built \textbf{XGBoost regression models} for EV energy bill prediction by engineering features from vehicle telematics, utility rates, parking behavior, and home energy consumption, achieving \textbf{R\textsuperscript{2} = 0.85} and validating via ROC/AUC and backtesting
+  \item Trained \textbf{transformer-based time-series forecasting} models (TFT, Autoformer, Informer) with Optuna hyperparameter optimization, improving forecast precision by \textbf{10\%} and reducing training time by \textbf{40\%} via distributed GPU computing
+  \item Engineered \textbf{large-scale data pipelines} processing \textbf{10+ TB} of EV telemetry using \textbf{PySpark}, BigQuery, and Airflow DAGs; built Looker Studio dashboards automating KPI reporting for \textbf{500+ stakeholders}
+  \item Architected \textbf{multi-agent AI system} with LangChain, RAG, and vector databases (FAISS, ChromaDB) serving analytics across \textbf{10 US states}, cutting query response latency by \textbf{35\%} for cross-functional teams of data scientists, risk experts, and product managers
+  \item Deployed production \textbf{MLOps infrastructure} on GCP (Cloud Run, Vertex AI) with CI/CD (Tekton), \textbf{Conda} environments, and Terraform IaC, achieving \textbf{99.9\%} uptime across multi-environment deployments
+\end{itemize}
+}
+
+\cventry{Jun 2023 -- Sep 2024}{AI/ML Researcher \& Software Engineer}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Deployed \textbf{deep learning classification models} (LSTM, CNN) on wearable medical devices, improving patient monitoring accuracy by \textbf{15\%} across 400+ patients in 5 clinical studies; validated with confusion matrices, ROC curves, and cross-validation
+  \item Delivered scalable \textbf{Python microservices} (Flask, FastAPI) with real-time data streaming, handling \textbf{10K+ concurrent connections} and reducing latency by \textbf{40\%}
+  \item Built \textbf{React/Next.js analytics dashboard} with MongoDB, interactive visualization, and role-based access, streamlining clinician decision-making workflows by \textbf{25\%}
+\end{itemize}
+}
+
+\cventry{Sep 2021 -- May 2024}{Research Assistant \& ML Engineer}{Texas A\&M University}{College Station, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.05cm, label={\color{goldaccent}\textbullet}]
+  \item Designed a \textbf{dual-branch transformer architecture} for wearable stress classification achieving \textbf{AUC 0.993} and \textbf{F1 0.965} in 5-fold group cross-validation; engineered 18-feature HRV extraction pipeline with Mixup/CutMix augmentation and focal loss
+  \item Published \textbf{comprehensive scoping review} of 200+ studies on ML/DL for stress detection (\textbf{79 citations}), synthesizing best practices for data preprocessing, feature engineering, and model selection
+  \item Co-authored \textbf{spatial ML study} combining \textbf{unsupervised clustering and supervised classification} to identify county-level COVID-19 risk factors across the US, integrating demographic, socioeconomic, and spatial features (\textbf{9 citations})
+  \item Deployed \textbf{computer vision system} for COVID-19 safety compliance using deep learning object detection, achieving \textbf{98\% accuracy} monitoring \textbf{50K+ daily interactions} (\textbf{76 citations})
+  \item Created \textbf{OpenSync}---open-source platform for real-time synchronization of multi-modal sensor data via WebSocket pipelines, adopted by \textbf{3 research labs} (\textbf{31 citations})
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveducation{Aug 2021 -- Dec 2023}{Ph.D., Industrial Engineering (Data Science Concentration)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}Published \textbf{16 peer-reviewed papers} with \textbf{470+ citations}. Dissertation on ML/DL for stress detection and health monitoring.}\\
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Machine Learning, Statistical Modeling, Data Mining, Optimization, Healthcare Analytics}\\[0.2em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}Completed \textbf{12+ graduate courses} with a perfect GPA across Deep Learning, NLP, Computer Vision, and Database Systems.}\\[0.1em]
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Certifications}
+
+{\color{darktext}
+\textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI}\enspace·\enspace
+\textbf{Machine Learning Specialization} {\color{lightgray}-- Stanford}\enspace·\enspace
+\textbf{NLP Specialization} {\color{lightgray}-- DeepLearning.AI}\enspace·\enspace
+\textbf{GenAI with LLMs} {\color{lightgray}-- AWS}\enspace·\enspace
+\textbf{Bayesian Statistics} {\color{lightgray}-- Coursera}
+}
+
+%-------------------------------------------------------------------------------
+% SELECTED PUBLICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Selected Publications}
+
+{\color{darktext}
+\textbf{Razavi, M.}, et al. ``ML \& Deep Learning for Stress Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024. \textbf{[79 citations]}\\[0.05em]
+\textbf{Razavi, M.}, et al. ``Automatic Monitoring for Physical Distance \& Mask Compliance in COVID-19.'' \textit{SN Computer Science}, 2022. \textbf{[76 citations]}\\[0.05em]
+\textbf{Razavi, M.}, et al. ``OpenSync: Synchronizing Measures in Neuroscience.'' \textit{J. Neuroscience Methods}, 2022. \textbf{[31 citations]}\\[0.05em]
+Ziyadidegan, S., \textbf{Razavi, M.}, et al. ``Factors Affecting COVID-19 Risk: Unsupervised \& Supervised Learning.'' \textit{SERR}, 2022. \textbf{[9 citations]}
+}
+
+\end{document}

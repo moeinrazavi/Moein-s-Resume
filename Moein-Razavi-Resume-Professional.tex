@@ -1,0 +1,215 @@
+\documentclass[10pt,letterpaper]{article}
+
+%-------------------------------------------------------------------------------
+% PACKAGES — ATS-safe: Helvetica, no graphics packages, clean text layer
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top=1.05cm, bottom=1.05cm, left=1.2cm, right=1.2cm]{geometry}
+\pagestyle{empty}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={Moein Razavi},
+  pdftitle={Moein Razavi - Resume},
+  pdfsubject={Senior Data Scientist \& AI/ML Engineer - Agentic AI, GenAI, Forecasting, Production ML},
+  pdfkeywords={Agentic AI, Multi-Agent Systems, GenAI, LLM, RAG, LangChain, LangGraph, Vertex AI, Gemini, Time-Series Forecasting, Transformers, Monte Carlo, V2G, Vector Databases, MLOps, Python, GCP, AWS, BigQuery, PySpark, XGBoost}
+}
+
+%-------------------------------------------------------------------------------
+% COLORS
+%-------------------------------------------------------------------------------
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{goldaccent}{RGB}{180,140,60}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{140,140,140}
+
+%-------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+\newcommand{\cvsection}[1]{%
+  \vspace{0.2em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.06em}%
+  {\color{goldaccent}\hrule height 0.6pt}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #5%
+  \vspace{0.14em}%
+}
+
+\newcommand{\cveducation}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
+  \end{tabularx}%
+  \vspace{0.15em}%
+}
+
+\newcommand{\cvskill}[2]{%
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.12em]
+}
+
+%-------------------------------------------------------------------------------
+% DOCUMENT
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi, Ph.D.}\\[0.2em]
+  {\large\color{darktext}
+    Senior Data Scientist \& AI/ML Engineer\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Agentic AI \& LLM Systems\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    Forecasting \& Optimization
+  }\\[0.3em]
+  {\color{graytext}
+    McKinney, TX\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    (979) 676-7486\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    \href{https://moeinrazavi.github.io/moeinrazavi/}{moeinrazavi.github.io/moeinrazavi}\enspace
+    {\color{goldaccent}\textbf{·}}\enspace
+    {\color{accentcolor}\href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{Google Scholar}}
+  }
+\end{center}
+
+\vspace{0.12em}
+{\color{goldaccent}\hrule height 1.5pt}
+\vspace{0.22em}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+{\color{darktext}
+Senior Data Scientist and AI/ML Engineer with a Ph.D. and \textbf{5+ years} building production AI systems end to end---from \textbf{multi-agent LLM platforms} to \textbf{transformer-based forecasting} and \textbf{real-time optimization under uncertainty}. At \textbf{Ford}, architected the vehicle-to-grid (V2G) aggregation platform---a custom transformer forecaster feeding Monte Carlo fleet sizing and day-ahead energy-market bidding---alongside an LLM-powered universal data-ingestion service and a multi-agent EV analytics chatbot serving \textbf{10 US states} over \textbf{10+ TB} of telemetry. Equally comfortable training models, building the services around them, and owning the MLOps that keeps them live. Published researcher (\textbf{16 papers, 470+ citations, h-index 10}); \textbf{4.0 GPA} across Ph.D.\ and M.S.\ at Texas A\&M.
+}
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\cvskill{Agentic AI \& LLMs}{LangChain · LangGraph · Google ADK · OpenAI Agents SDK · CrewAI · AutoGen · MCP · Vertex AI Gemini · GPT-4o · Claude · Llama · LLM Routing \& Tool Calling · Prompt Engineering · Fine-Tuning (LoRA/QLoRA) · Guardrails · LangSmith}
+\cvskill{RAG \& Retrieval}{FAISS · ChromaDB · Pinecone · Hybrid Retrieval (BM25 + Dense) · Re-ranking · Text-to-SQL · Document QA over PDF/Excel/XML/HTML · Chain-of-Thought \& Self-Reflection}
+\cvskill{Forecasting \& Optimization}{Time-Series Transformers (TFT, Autoformer, Informer, PatchTST, DeepAR, N-HiTS) · GluonTS · NeuralForecast · Optuna · Monte Carlo Simulation · Mixed-Integer Optimization (CPLEX) · Backtesting}
+\cvskill{ML / Deep Learning}{PyTorch · TensorFlow · Hugging Face Transformers · scikit-learn · XGBoost · Computer Vision (YOLO, object detection) · SHAP/LIME · Signal Processing (HRV, EEG, PPG) · Distributed GPU Training}
+\cvskill{Cloud \& Data Engineering}{GCP (Vertex AI, BigQuery, Cloud Run, Dataproc, Dataform, Looker Studio) · AWS (S3, EC2, Lambda, SageMaker) · Azure OpenAI · PySpark · Airflow (Astronomer) · ETL/ELT · PostgreSQL · MongoDB · Redis}
+\cvskill{MLOps \& DevOps}{Docker · Kubernetes · OpenShift · Terraform · CI/CD (Tekton, GitHub Actions, Fastlane) · SonarQube · 42 Crunch API Security · IAP · OAuth 2.0 / JWT / SAML · Observability \& Monitoring}
+\cvskill{Languages \& Backend}{Python (Expert) · SQL · TypeScript · Swift/SwiftUI · Java · C++ · FastAPI · Flask · Django · Dash · REST · WebSocket · gRPC · React · Next.js · Streamlit · Core ML}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\cventry{Aug 2023 -- Present}{Senior Data Scientist \& AI/ML Engineer}{Ford Motor Company}{Detroit, MI}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Architected Ford's V2G (vehicle-to-grid) aggregation platform end to end}: designed a custom \textbf{1.5M-parameter transformer} forecasting week-ahead vehicle home-availability, trained on \textbf{557K windows across $\sim$9{,}500 VINs} (\textbf{ROC-AUC 0.882} vs.\ 0.836 heuristic baseline), feeding \textbf{Monte Carlo fleet sizing} and \textbf{day-ahead bid planning} against live ERCOT/CAISO/MISO market prices---validated via 5-minute dispatch simulation with dropout compensation and delivered through a real-time FastAPI/WebSocket dashboard
+  \item \textbf{Built an LLM-powered universal utility-data ingestion service} (FastAPI, Vertex AI Gemini)---a \textbf{five-agent pipeline} (intake, schema discovery, extraction, validation, self-correcting reflection loop) that extracts hourly energy consumption from \textbf{any utility bill format} (CSV, Excel, PDF, XML, images) with offline PII redaction before every model call; replaced brittle utility-specific parsers, hardened against \textbf{485+ real-world test fixtures}
+  \item \textbf{Developed a production multi-agent EV analytics chatbot} (LangChain) with an \textbf{LLM router} dispatching queries across a \textbf{text-to-SQL agent} over 10 state-level BigQuery datasets, a \textbf{RAG document agent} over EV manuals and technical specs (FAISS/ChromaDB), and a \textbf{response-validation agent}---cutting query latency by \textbf{35\%}
+  \item \textbf{Led the Ford Energy Advisor rate-recommendation platform}: per-VIN charging-cost simulator (Flask, BigQuery, utility tariff APIs, DBSCAN parking clustering, CPLEX optimization), automated PDF customer reports, and a guided Dash web experience---shortening the rate-analysis cycle by \textbf{20\%}
+  \item \textbf{Benchmarked 9 time-series forecasting model families} (TFT, Autoformer, Informer, PatchTST, DeepAR, N-HiTS) with Optuna search on distributed Vertex AI GPUs to predict EV parking and charging routines---improving forecast accuracy \textbf{10\%} and cutting training time \textbf{40\%}
+  \item \textbf{Built an XGBoost model for EV energy-bill prediction} from vehicle telematics, utility tariffs, parking behavior, and home consumption (\textbf{R\textsuperscript{2} = 0.85}); integrated into the rate recommender as a real-time inference service with backtesting and drift monitoring
+  \item \textbf{Engineered 10+ TB EV telemetry pipelines} (PySpark on Dataproc, 15 Airflow DAGs, BigQuery/Dataform with consent-governed data products) powering discharge-analytics dashboards and all downstream models; Looker Studio automation cut KPI reporting turnaround \textbf{45\%} for \textbf{500+ stakeholders}
+  \item \textbf{Owned production MLOps} on GCP (Cloud Run, Vertex AI, Dataproc) with Tekton CI/CD, Terraform IaC, SonarQube, and 42 Crunch API security across dev/QA/prod---\textbf{99.9\% uptime} and \textbf{25\%} faster data ingestion
+\end{itemize}
+}
+
+\cventry{Jun 2023 -- Sep 2024}{Software Engineer \& AI/ML Researcher}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Architected an end-to-end real-time biosignal AI platform} streaming \textbf{9 biomarkers} from wearable medical patches through Python microservices to clinician-facing apps, with the embedded ROPA pain-detection algorithm---raising monitoring precision \textbf{30\%}
+  \item \textbf{Deployed LSTM/CNN models on-device} via Core ML for real-time inference on wearable patches across \textbf{400+ patients in 5 clinical studies}---\textbf{15\%} accuracy improvement with real-time video processing at 60 FPS
+  \item \textbf{Built scalable Python microservices} (FastAPI, Flask) with WebSocket biosignal streaming handling \textbf{10K+ concurrent connections} (\textbf{40\%} latency reduction), plus a React/Next.js clinical dashboard (MongoDB, JWT) for physician workflows
+  \item \textbf{Shipped 2 production SwiftUI iOS apps} (patient and clinical) with CoreBluetooth integration, MVVM-Coordinator architecture, and OAuth 2.0/JWT; owned CI/CD (Tekton, AWS CodeDeploy, Docker) for \textbf{30\%} faster zero-downtime releases
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Present}{Founder \& Lead Developer}{Clink Social \enspace\textbar\enspace Inspecalytics}{McKinney, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Built and launched Clink Social}, a SwiftUI social platform on Firebase (Auth, Firestore, Storage, FCM) with real-time messaging, fan-out timeline architecture, and secure QR-based cross-device OAuth 2.0/JWT login---raising engagement \textbf{22\%} and cutting sign-in friction \textbf{35\%}
+  \item \textbf{Created Inspecalytics}, a field-inspection suite (iOS + web, Supabase) with offline-first sync, in-app DOCX/PPTX/XLSX report generation, and Fastlane + GitHub Actions CI/CD---reducing report cycles \textbf{35\%} and deployment time \textbf{40\%}
+\end{itemize}
+}
+
+\cventry{Sep 2018 -- May 2024}{Research Assistant \& ML Engineer}{Texas A\&M University}{College Station, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Designed a dual-branch transformer} (1D-CNN tokenizer, rotary positional encoding, cross-attention, focal loss) for real-time stress detection from noisy Apple Watch heart-rate data (\textbf{256 participants, 1.7B rows})---\textbf{AUC 0.993, F1 0.965}, deployed on-device via Core ML with \textbf{60\%} faster inference
+  \item \textbf{Deployed a real-time computer vision system} for COVID-19 physical-distancing and mask detection---\textbf{98\% accuracy} across \textbf{50K+ daily interactions} (\textbf{76 citations})
+  \item \textbf{Created OpenSync}, an open-source platform synchronizing EEG, eye-tracking, and biosensor streams over WebSocket pipelines; adopted by \textbf{3 research labs} (\textbf{31 citations}, \textit{J.\ Neuroscience Methods})
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveducation{Aug 2021 -- Dec 2023}{Ph.D., Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Dissertation:} Advancing Stress Detection---Real-Time, Naturalistic, and Personalized AI Approaches for Stress and Mental Disorder Detection}\\[0.1em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Dean's List | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Deep Learning, Computer Vision, NLP, Reinforcement Learning, Algorithms, Databases, Software Engineering}
+
+%-------------------------------------------------------------------------------
+% SELECTED PUBLICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Selected Publications \enspace{\color{graytext}\normalsize(16 papers · 470+ citations · h-index 10)}}
+
+{\color{darktext}
+\textbf{Razavi, M.}, et al. ``ML, DL \& Data Preprocessing for Stress \& Mental Disorder Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024. \textbf{[79 cites]}\\[0.04em]
+Kazeminasab, S., \dots, \textbf{Razavi, M.}, et al. ``Localization, Mapping \& Navigation in In-Pipe Robots: A Review.'' \textit{IEEE Access}, 2021. \textbf{[85 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``Automatic Monitoring of Physical Distance \& Mask Compliance in COVID-19.'' \textit{SN Computer Science}, 2022. \textbf{[76 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``OpenSync: Synchronizing Multi-Modal Measures in Neuroscience.'' \textit{J.\ Neuroscience Methods}, 2022. \textbf{[31 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``Evaluating Mental Stress via Wearable HR \& Hand Acceleration.'' \textit{arXiv:2309.11097}, 2023. \textbf{[26 cites]}
+}
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS & HONORS
+%-------------------------------------------------------------------------------
+\cvsection{Certifications \& Honors}
+
+{\color{darktext}
+\textbf{Generative AI with LLMs} {\color{lightgray}-- AWS} ·
+\textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI} ·
+\textbf{Machine Learning} {\color{lightgray}-- \mbox{Stanford}} ·
+\textbf{NLP Specialization} {\color{lightgray}-- DeepLearning.AI} ·
+\textbf{Advanced MLOps} {\color{lightgray}-- Coursera} ·
+\textbf{Graduate \mbox{Research} Fellowship}, Texas A\&M (2019--2023)
+}
+
+\end{document}

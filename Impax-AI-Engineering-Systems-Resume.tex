@@ -1,0 +1,217 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+%-------------------------------------------------------------------------------
+% PACKAGES — ATS-safe: Helvetica, no graphics packages, clean text layer
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+\emergencystretch=1.5em
+
+\usepackage[top=1.15cm, bottom=1.15cm, left=1.27cm, right=1.27cm]{geometry}
+\pagestyle{empty}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={Moein Razavi},
+  pdftitle={Moein Razavi - Resume},
+  pdfsubject={Senior AI/ML Engineer - GenAI for Complex Engineering Systems, Agentic AI, Mechanical Engineering},
+  pdfkeywords={Agentic AI, Multi-Agent Systems, GenAI, LLM, RAG, LangGraph, Digital Engineering, Cyber-Physical Systems, Mechanical Engineering, FEA, ANSYS, COMSOL, Simulink, Control Systems, Robotics, Probabilistic Forecasting, Monte Carlo, V2G, Vector Databases, MLOps, Python, GCP, AWS}
+}
+
+%-------------------------------------------------------------------------------
+% COLORS
+%-------------------------------------------------------------------------------
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{goldaccent}{RGB}{180,140,60}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{140,140,140}
+
+%-------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+% Engine-safe separator dots (literal U+00B7 breaks under some engines/encodings)
+\newcommand{\sdot}{\textperiodcentered}
+\newcommand{\gsep}{\enspace{\color{goldaccent}\bfseries\textperiodcentered}\enspace}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.18em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.06em}%
+  {\color{goldaccent}\hrule height 0.6pt}%
+  \vspace{0.18em}%
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #5%
+  \vspace{0.12em}%
+}
+
+\newcommand{\cveducation}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
+  \end{tabularx}%
+  \vspace{0.15em}%
+}
+
+\newcommand{\cvskill}[2]{%
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.1em]
+}
+
+%-------------------------------------------------------------------------------
+% DOCUMENT
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi, Ph.D.}\\[0.2em]
+  {\color{darktext}\large
+    Senior AI/ML Engineer\gsep GenAI for Complex Engineering Systems\gsep Mechanical Engineer
+  }\\[0.3em]
+  {\color{graytext}
+    McKinney, TX\gsep
+    (979) 676-7486\gsep
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\gsep
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\gsep
+    \href{https://moeinrazavi.github.io/moeinrazavi/}{moeinrazavi.github.io/moeinrazavi}\gsep
+    {\color{accentcolor}\href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{Scholar (470+ citations)}}
+  }
+\end{center}
+
+\vspace{0.12em}
+{\color{goldaccent}\hrule height 1.5pt}
+\vspace{0.22em}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+{\color{darktext}
+\textbf{Senior AI/ML Engineer with a rare dual foundation}: \textbf{B.S.\ Mechanical Engineering} (controls, robotics, FEA, mechatronics) and \textbf{Ph.D.\ with 4.0 GPA} (Texas A\&M) --- purpose-built for applying \textbf{GenAI to complex engineering systems}. \textbf{5+ years} architecting production GenAI platforms: \textbf{LLM-orchestrated multi-agent pipelines} (LangGraph, RAG, vector DBs), \textbf{transformer-based probabilistic forecasting}, and \textbf{Monte Carlo decision engines} that act under uncertainty. At \textbf{Ford}, delivered a real-time \textbf{V2G aggregator/dispatch system} --- a grid-scale cyber-physical decision platform --- plus multi-agent GenAI systems serving \textbf{10 US states} and \textbf{10+ TB} of telemetry. Fluent in physics, simulation, and controls on one side; LLMs, agents, and MLOps on the other. Published researcher (\textbf{16 papers, 470+ citations, h-index 10}).
+}
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\cvskill{Agentic AI \& Multi-Agent Systems}{LangGraph \sdot{} CrewAI \sdot{} AutoGen \sdot{} OpenAI Agents SDK \sdot{} MCP \sdot{} LLM Routing \& Tool Use \sdot{} Planner/Executor \& Supervisor/Worker patterns \sdot{} ReAct \sdot{} Self-Reflection \sdot{} LangSmith Tracing \& Eval}
+\cvskill{Generative AI, LLMs \& RAG}{GPT-4/4o \sdot{} Claude \sdot{} Gemini \sdot{} Llama \sdot{} LangChain \sdot{} Fine-Tuning (LoRA/QLoRA) \sdot{} Guardrails \sdot{} Structured Outputs \sdot{} Tool Calling \sdot{} FAISS \sdot{} ChromaDB \sdot{} Pinecone \sdot{} Hybrid Retrieval \& Re-rankers \sdot{} Text-to-SQL}
+\cvskill{Engineering \& Physical Systems}{FEA (ANSYS, Abaqus) \sdot{} Multiphysics (COMSOL) \sdot{} CFD (ANSYS CFX) \sdot{} CAD (CATIA, SolidWorks) \sdot{} Control Systems \& Model-Based Design (MATLAB/Simulink) \sdot{} Robotics \& Mechatronics (ADAMS, PLC, Arduino, ARM) \sdot{} MEMS \sdot{} Biosignal/EEG Processing}
+\cvskill{Decision Systems \& Forecasting}{Probabilistic Forecasting (Chronos-2, iTransformer, TFT, Autoformer) \sdot{} Monte Carlo Simulation \sdot{} P50/P90 Uncertainty Quantification \sdot{} Real-Time Dispatch \& Optimization \sdot{} Bayesian Inference \sdot{} Backtesting}
+\cvskill{ML / DL \& MLOps}{PyTorch \sdot{} TensorFlow \sdot{} Hugging Face \sdot{} scikit-learn \sdot{} XGBoost \sdot{} Optuna \sdot{} SHAP \sdot{} Distributed GPU (Vertex AI) \sdot{} Airflow \sdot{} Docker \sdot{} Kubernetes \sdot{} Terraform \sdot{} CI/CD (Tekton, GitHub Actions)}
+\cvskill{Cloud, Data \& Backend}{GCP (Vertex AI, BigQuery, Cloud Run) \sdot{} AWS \sdot{} Azure OpenAI \sdot{} PySpark \sdot{} PostgreSQL \sdot{} MongoDB \sdot{} Python (Expert) \sdot{} TypeScript \sdot{} SQL \sdot{} C++ \sdot{} MATLAB \sdot{} FastAPI \sdot{} REST/WebSocket/gRPC \sdot{} React/Next.js}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\cventry{Aug 2023 -- Present}{Senior Data Scientist \& AI/ML Engineer}{Ford Motor Company}{Detroit, MI}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Built real-time V2G (Vehicle-to-Grid) aggregator and dispatch system} --- a grid-scale cyber-physical platform combining \textbf{probabilistic forecasting} (\textbf{Chronos-2}, \textbf{iTransformer}) with \textbf{Monte Carlo simulation ($\sim$3{,}000 scenarios per dispatch)} to optimize bidding and dispatch under uncertainty; \textbf{P50/P90 quantile reporting}, sub-second decisions, streaming telemetry feedback
+  \item \textbf{Architected production Multi-Agent GenAI Chatbot} (LangGraph, LangChain) with an \textbf{LLM Router/Decider layer} dispatching queries across specialized agents --- \textbf{SQL Agent} (text-to-SQL over BigQuery), \textbf{RAG Agent} (FAISS/ChromaDB, hybrid retrieval, re-ranking), \textbf{Document Agent} --- serving EV analytics in \textbf{10 US states}, cutting query latency \textbf{35\%}
+  \item \textbf{Designed multi-agent ingestion platform} (Vertex AI Gemini, LangGraph) with \textbf{Intake}, \textbf{Schema Discovery}, \textbf{Extraction}, \textbf{Validation}, and \textbf{Orchestrator} agents --- a universal, self-healing pipeline replacing $\sim$\textbf{500 lines} of utility-specific parsers for CSV/Excel/PDF/XML/HTML ingestion
+  \item \textbf{Engineered transformer forecasting pipeline} (TFT, Autoformer, Informer) with Optuna search on distributed Vertex AI GPU --- EV load forecasts up \textbf{10\%}, training time down \textbf{40\%}; feeds rate optimization, dispatch, and capacity planning
+  \item \textbf{Built XGBoost decision model} for EV energy bill prediction over telematics, tariffs, and home consumption (\textbf{R\textsuperscript{2} = 0.85}); deployed as real-time inference service with backtesting and drift monitoring
+  \item \textbf{Engineered 10+ TB EV telemetry pipelines} (PySpark, BigQuery, Airflow) powering all agents and models; automated KPI reporting for \textbf{500+ stakeholders}, shrinking turnaround \textbf{45\%}
+  \item \textbf{Deployed production MLOps infrastructure} on GCP with Tekton, Terraform IaC, and SonarQube --- \textbf{99.9\% uptime}, ingestion time down \textbf{25\%}
+\end{itemize}
+}
+
+\cventry{Jun 2023 -- Sep 2024}{Software Engineer \& AI/ML Researcher}{CereVu Medical, Inc.}{San Francisco Bay Area, CA}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Architected hardware-to-cloud real-time biosignal AI platform} streaming \textbf{9 biomarkers} from wearable sensor patches (Nordic UART BLE) through Python microservices to clinician apps with embedded \textbf{ROPA pain decision algorithm} --- monitoring precision up \textbf{30\%}
+  \item \textbf{Deployed LSTM/CNN models on-device} (Core ML) for real-time edge inference on wearables across \textbf{400+ patients} in 5 clinical studies --- \textbf{15\%} accuracy lift
+  \item \textbf{Built Python microservices} (FastAPI, WebSocket) handling \textbf{10K+ concurrent biosignal streams} (\textbf{40\%} latency cut); shipped a React/Next.js clinical dashboard and 2 production iOS apps with zero-downtime CI/CD
+\end{itemize}
+}
+
+\cventry{Sep 2018 -- May 2024}{Research Assistant \& ML Engineer}{Texas A\&M University}{College Station, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Designed dual-branch transformer} (1D-CNN tokenizer, RoPE, cross-attention, focal loss) for real-time stress detection on \textbf{noisy, naturalistic wearable sensor data} (\textbf{256 participants, 1.7B rows}); \textbf{AUC 0.993, F1 0.965}, on-device at \textbf{60\% faster inference}
+  \item \textbf{Built OpenSync} --- open-source platform synchronizing EEG, eye-tracking, and biosensor streams over WebSocket; adopted by \textbf{3 research labs} (\textbf{31 citations}, \textit{J.\ Neuroscience Methods})
+  \item \textbf{Deployed real-time computer vision system} for COVID-19 distancing/mask detection, \textbf{98\% accuracy} across \textbf{50K+ daily interactions} (\textbf{76 citations})
+\end{itemize}
+}
+
+\cventry{2016 -- 2018}{Research Assistant \& Engineering Team Lead, MEMS Neural Microelectrodes}{Cognitive Sciences \& Technologies Council}{Tehran, Iran}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Led the engineering team} designing single/planar/3D neural microelectrodes: structural \textbf{FEA in ANSYS} cross-validated in \textbf{COMSOL Multiphysics}; published at \textbf{MEMS 2018}; taught micro/nano-fabrication processes at Amirkabir University
+  \item \textbf{Designed and implemented an EEG-based brain-computer interface for robot motion control} (B.S.\ thesis) --- signal acquisition, filtering, feature extraction (MATLAB DSP, EEGLab), classification, and embedded motor control (ARM/Arduino): the full sense-decide-actuate loop of a physical system
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Present}{Founder \& Lead Developer}{Clink Social \enspace\textbar\enspace Inspecalytics}{McKinney, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Built and shipped two production platforms solo}: a Firebase social app with real-time messaging and secure QR cross-device OAuth login (engagement up \textbf{22\%}), and a Supabase field-inspection suite with offline-first sync and in-app DOCX/PPTX report generation (report cycles down \textbf{35\%})
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveducation{Aug 2021 -- Dec 2023}{Ph.D., Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Dissertation:} Advancing Stress Detection --- Real-Time, Naturalistic, and Personalized AI Approaches.}\\[0.1em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Deep Learning, Computer Vision, NLP, Reinforcement Learning, Algorithm Design.}\\[0.1em]
+\cveducation{2013 -- 2018}{B.S., Mechanical Engineering}{Amirkabir University of Technology (Tehran Polytechnic)}{Tehran, Iran}{Top 1\% Nationwide}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Thesis:} EEG-based brain-computer interface for robot motion control \sdot{} Ranked top 1\% of $\sim$250{,}000 in Iran's National University Entrance Exam \sdot{} Automatic Control, Robotics, FEM, Vibrations, Heat Transfer, CAD/CAM.}
+
+%-------------------------------------------------------------------------------
+% SELECTED PUBLICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Selected Publications \enspace{\color{graytext}\normalsize(16 papers \sdot{} 470+ citations \sdot{} h-index 10)}}
+
+{\color{darktext}
+\textbf{Razavi, M.}, et al. ``ML \& DL for Stress \& Mental Disorder Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024. \textbf{[79 cites]}\\[0.04em]
+Kazeminasab, S., \textbf{Razavi, M.}, et al. ``Mapping \& Navigation in In-Pipe Robots: A Review.'' \textit{IEEE Access}, 2021. \textbf{[85 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``Monitoring of Distance \& Mask Compliance in COVID-19.'' \textit{SN Computer Science}, 2022. \textbf{[76 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``OpenSync: Synchronizing Measures in Neuroscience.'' \textit{J.\ Neuroscience Methods}, 2022. \textbf{[31 cites]}\\[0.04em]
+\textbf{Razavi, M.}, Nadafi, R. ``Conceptual Design of Single/Planar/3D Microelectrodes (ANSYS/COMSOL).'' \textit{MEMS 2018}.
+}
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS & AWARDS
+%-------------------------------------------------------------------------------
+\cvsection{Certifications \& Honors}
+
+{\color{darktext}
+\textbf{Generative AI with LLMs} {\color{lightgray}-- AWS}\enskip\sdot\enskip
+\textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI}\enskip\sdot\enskip
+\textbf{Machine Learning} {\color{lightgray}-- \mbox{Stanford}}\enskip\sdot\enskip
+\textbf{NLP Specialization} {\color{lightgray}-- DeepLearning.AI}\enskip\sdot\enskip
+\textbf{Advanced MLOps} {\color{lightgray}-- Coursera}\enskip\sdot\enskip
+\textbf{Bayesian Statistics} {\color{lightgray}-- Coursera}\enskip\sdot\enskip
+\textbf{Graduate \mbox{Research} Fellowship}, Texas A\&M (2019--2023)
+}
+
+\end{document}

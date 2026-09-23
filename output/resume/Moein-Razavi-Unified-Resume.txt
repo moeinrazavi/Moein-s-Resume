@@ -1,0 +1,93 @@
+Moein Razavi
+AI/ML Engineer | Generative AI, Forecasting & Cloud Applications
+McKinney, TX | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi | Google Scholar
+Professional Summary
+AI/ML engineer and data scientist with 8+ years across applied research and industry, including 3+ years at
+Ford. Builds deep learning, generative AI, and cloud applications spanning wearable sensing, document RAG,
+text-to-SQL, and electricity-market forecasting. Combines Python/PyTorch model development with data
+engineering and mobile/web delivery.
+Professional Experience
+Ford Motor Company
+Data Scientist | Aug 2023 - Present
+• EV analytics assistant: Reduced time spent answering recurring analytics and document questions by
+30% through natural-language access to BigQuery, legal documents, and vehicle manuals. Designed
+LangChain/GPT-4o orchestration for BM25-based retrieval-augmented generation (RAG) and schema-aware
+text-to-SQL agents, with intent routing, conversational context, and domain-rule answer checks; deployed
+Dash on Cloud Run with SAML/ADFS authentication.
+• Vehicle-to-grid market bidding: Reduced vehicle-availability forecast error by approximately 14% relative
+to the previous baseline, supporting capacity estimates for electricity-market bids. Selected PatchTST
+through model comparisons; tuned candidates with Python/PyTorch and Optuna on Vertex AI GPUs.
+Combined ERCOT prices via gridstatus, Monte Carlo capacity estimates, greedy vehicle selection, and load
+reallocation after disconnections.
+• Utility data onboarding (HOMELOAD): Reduced manual electricity-data preparation time by approximately
+50% with a Python/FastAPI pipeline combining Gemini schema discovery, pandas/lxml extraction,
+deterministic validation, and bounded corrective retries. Used BigQuery MERGE for repeatable loads;
+deployed with Docker, Cloud Run, and Terraform.
+• Rate recommendation: Built utility-plan comparisons using XGBoost bill predictions from tariffs, vehicle
+telemetry, and household consumption. Delivered Flask APIs backed by BigQuery and a
+SAML -authenticated Dash interface on Cloud Run through Tekton CI/CD.
+• Energy data engineering and reporting: Automated simulator-input preparation and optimizer-output
+processing with PySpark, BigQuery, and Airflow. Delivered Looker Studio discharge reporting and REST
+APIs for reviewing energy performance in operational dashboards.
+• Code analysis and cloud cost estimation: Built a FastAPI/LangChain tool for engineering code reviews
+using GitPython, AST parsing, and Server-Sent Events. Generated LLM-assisted complexity estimates;
+calculated Vertex AI costs from assumed resources and static pricing.
+CereVu Medical, Inc.
+Software Developer / Research Engineer (Concurrent Contract) | Jun 2023 - Sep 2024
+• Wearable health platform: Developed Vitality and Clinical, two SwiftUI apps for capturing and reviewing 9
+physiological signals through CoreBluetooth BLE and Swift Charts. Migrated Clinical from UIKit to an
+MVVM-Coordinator architecture supporting calibration, exports, role-based workflows, and OAuth 2.0/JWT
+authentication.
+• Backend and delivery: Connected wearable data to a React/Next.js dashboard through Python/Flask
+services, WebSocket streaming, and MongoDB. Deployed Docker services on AWS EC2 with GitHub
+Actions and distributed iOS builds through TestFlight.
+Education
+Ph.D., Industrial Engineering | Texas A&M University | Dec 2023 | GPA: 4.0/4.0
+Master of Engineering, Computer Engineering | Texas A&M University | May 2021 | GPA: 4.0/4.0
+Selected Projects
+• mHELP transformer integration (2026): Integrated a PyTorch-exported transformer into Apple Watch
+stress detection using Core ML, combining 300-point heart-rate sequences with 18 engineered features.
+Implemented Swift preprocessing, sequence resampling, normalization with exported scalers, and
+probability-based alerts.
+• Business Action Prioritizer: Designed a Google ADK/Gemini workflow that turns business data and
+scoring rubrics into ranked actions with supporting analysis. Gated PandasAI execution on user approval;
+implemented FastAPI/SQLite sessions and MCP report delivery through Cloud Storage.
+• Inspecalytics: Reduced inspection-report preparation time by approximately 50% by connecting annotated
+photos directly to Word/PowerPoint reports using SwiftUI, React/T ypeScript, and Supabase. Implemented
+offline edit conflict resolution, ARKit/Apple Vision photo organization, and XCT est/Vitest tests.
+• Clink Social: Built SwiftUI/MapKit discovery and messaging with Firebase. Implemented T ypeScript Cloud
+Functions for feeds and notifications, plus QR-based sign-in using time-limited OAuth/JWT tokens.
+Research Experience
+Texas A&M University
+Research Assistant | Sep 2018 - May 2024
+Published research in machine learning and sensing; 500+ Google Scholar citations (September 2026).
+• Wearable stress detection: Evaluated heart-rate/motion classifiers on data from 54 students over 40 days
+using cross-validation, ROC-AUC, and SHAP . Trained Keras multilayer perceptrons on physiological features
+and contributed to mHELP’s earlier scikit-learn/XGBoost inference pipeline.
+• MERCURY: Co-authored research using random projection with quantization and cached computation
+reuse; reported 1.97x average training speedup across 12 models with accuracy similar to baseline.
+• OpenSync: Co-developed open-source Python software using Lab Streaming Layer to synchronize sensors
+and experiment events; published tests measured RMS recording-time lag below 0.07 ms. GitHub repository.
+• Computer vision: Developed face-mask and physical-distance monitoring using TensorFlow Faster R-CNN
+detectors and calibrated perspective transforms to measure distances in video.
+• GlucoseCoach: Built an iOS application and Python/Flask backend for glucose monitoring.
+Technical Skills
+Core Languages: Python, SQL, T ypeScript/JavaScript, Swift; additional: C++, Java, R, MATLAB
+ML Frameworks: PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, Hugging Face, Optuna, OpenCV
+ML Methods: Deep learning (MLPs, CNNs, transformers), time-series forecasting, Monte Carlo, SHAP/LIME
+Generative AI: LangChain, Google ADK, Gemini, RAG, BM25, agent routing, text-to-SQL, MCP , PandasAI
+Data: BigQuery, PySpark, Airflow, pandas, NumPy, PostgreSQL, MongoDB, Firebase, Supabase
+Software Engineering: FastAPI, Flask, REST , WebSocket, React/Next.js, SwiftUI, Core ML, CoreBluetooth,
+OAuth/JWT/SAML
+Cloud: GCP (Vertex AI, Cloud Run, Dataproc), AWS (EC2, S3, Lambda, SageMaker), Azure OpenAI
+Delivery and Testing: Docker, Terraform, Kubernetes, Git, GitHub Actions, Tekton, AWS CodeDeploy,
+Fastlane, TestFlight, XCT est, Vitest
+Selected Publications
+Razavi, M., et al. Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting,
+Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. JMIR Mental Health,
+2024.
+Janfaza, V., Weston, K., Razavi, M., et al. MERCURY: Accelerating DNN Training By Exploiting Input Similarity.
+IEEE HPCA, 2023.
+Razavi, M., et al. OpenSync: An open-source platform for synchronizing multiple measures in neuroscience
+experiments. Journal of Neuroscience Methods, 2022.

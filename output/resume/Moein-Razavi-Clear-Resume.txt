@@ -1,0 +1,53 @@
+Moein Razavi
+McKinney, TX | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi
+
+Professional Summary
+Data scientist and software developer with a Ph.D. in Industrial Engineering. Experience building machine learning models, data pipelines, backend services, and iOS applications. Work spans electric vehicle analytics at Ford, wearable sensor applications at CereVu Medical, and university research in stress detection.
+
+Technical Skills
+Programming: Python, SQL, Swift, TypeScript
+Machine Learning: PyTorch, TensorFlow, scikit-learn, XGBoost, time-series forecasting, Optuna
+AI Applications: LangChain, retrieval-augmented generation (RAG), text-to-SQL, FAISS
+Data and Cloud: Google Cloud Platform (GCP), BigQuery, Vertex AI, Cloud Run, PySpark, Apache Airflow
+Software Development: Flask, FastAPI, REST APIs, WebSocket, SwiftUI, React, Docker, Tekton, GitHub Actions
+
+Professional Experience
+Ford Motor Company
+Data Scientist | Aug 2023 - Present
+- Developed time-series forecasting models for electric vehicle (EV) analytics using transformer architectures, Hugging Face, and Optuna for hyperparameter tuning.
+- Built data pipelines with PySpark, BigQuery, and Airflow to process vehicle telemetry and prepare inputs and outputs for energy simulations.
+- Developed an EV analytics chatbot that routed questions to SQL queries or document retrieval using LangChain and retrieval-augmented generation.
+- Built a utility rate recommendation application with Flask APIs, BigQuery workflows, and a Dash interface; deployed the application on Cloud Run using Tekton pipelines.
+- Created Looker Studio dashboards to report EV discharge activity and developed REST APIs for operational dashboards.
+CereVu Medical, Inc.
+Software Developer / Research Engineer (Contract) | Jun 2023 - Sep 2024
+- Developed Vitality and Clinical iOS applications in SwiftUI to display physiological signals from wearable sensors, with CoreBluetooth integration and data visualization.
+- Migrated the Clinical application from UIKit to SwiftUI and implemented role-based screens, data export, and calibration features.
+- Built Python services with Flask, FastAPI, and WebSocket for biosignal streaming, and developed a React/Next.js dashboard for reviewing patient data.
+
+Research Experience
+Texas A&M University
+Research Assistant | Sep 2018 - May 2024
+- Developed machine learning workflows for stress detection from wearable heart-rate and motion data, including signal preprocessing, feature extraction, and model evaluation.
+- Co-developed OpenSync, an open-source platform for synchronizing EEG, eye-tracking, physiological signals, and experiment events in neuroscience studies.
+- Developed computer vision methods for detecting face masks and estimating physical distance in video as part of COVID-19 monitoring research.
+- Co-authored a scoping review of machine learning, deep learning, and data preprocessing methods for stress and stress-related mental disorder research.
+
+Selected Projects
+Inspecalytics
+- Developed a SwiftUI field-inspection application with photo annotation, offline data storage, and automated Word and PowerPoint report generation.
+- Configured Fastlane and GitHub Actions to build and distribute TestFlight releases.
+Clink Social
+- Developed a SwiftUI social application with Firebase authentication, Firestore data storage, messaging, and location-based discovery.
+- Implemented TypeScript cloud functions for feed aggregation and push notifications.
+
+Education
+Doctor of Philosophy (Ph.D.), Industrial Engineering
+Texas A&M University | Dec 2023
+Master of Engineering, Computer Engineering
+Texas A&M University | May 2021
+
+Selected Publications
+Razavi, M., et al. (2024). Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. JMIR Mental Health, 11, e53714. doi:10.2196/53714.
+Razavi, M., et al. (2022). OpenSync: An open-source platform for synchronizing multiple measures in neuroscience experiments. Journal of Neuroscience Methods, 369, 109458. doi:10.1016/j.jneumeth.2021.109458.

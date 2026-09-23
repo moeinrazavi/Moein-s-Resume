@@ -1,0 +1,222 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+%-------------------------------------------------------------------------------
+% PACKAGES — ATS-safe: Helvetica, no graphics packages, clean text layer
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+\emergencystretch=1.5em
+
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.27cm, right=1.27cm]{geometry}
+\pagestyle{empty}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={Moein Razavi},
+  pdftitle={Moein Razavi - Senior Medical Device AI/ML Engineer Resume},
+  pdfsubject={Senior Medical Device AI/ML Engineer - Clinical AI, Deep Learning, Image Processing, Regulated Software},
+  pdfkeywords={Medical Device Software, AI/ML Engineer, Deep Learning, Image Processing, Computer Vision, Segmentation, PyTorch, Python, Clinical Validation, Clinical Studies, Wearable Medical Devices, Biosignal Processing, Statistical Validation, Verification and Validation, Software Requirements Specification, Risk Management, Design History File, FDA, IEC 62304, MLOps, Agentic AI, Claude Code, Cursor, Remote}
+}
+
+%-------------------------------------------------------------------------------
+% COLORS
+%-------------------------------------------------------------------------------
+\definecolor{headerblue}{RGB}{25,55,95}
+\definecolor{accentcolor}{RGB}{0,102,153}
+\definecolor{goldaccent}{RGB}{180,140,60}
+\definecolor{darktext}{RGB}{40,40,40}
+\definecolor{graytext}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{140,140,140}
+
+%-------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+% Engine-safe separator dots (literal U+00B7 breaks under some engines/encodings)
+\newcommand{\sdot}{\textperiodcentered}
+\newcommand{\gsep}{\enspace{\color{goldaccent}\bfseries\textperiodcentered}\enspace}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.45em}%
+  {\color{headerblue}\large\bfseries #1}%
+  \vspace{0.04em}%
+  {\color{goldaccent}\hrule height 0.6pt}%
+  \vspace{0.12em}%
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}\enskip{\color{lightgray}#4} & \\
+  \end{tabularx}%
+  \vspace{0.02em}%
+  #5%
+  \vspace{0.05em}%
+}
+
+\newcommand{\cveducation}[5]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries\color{headerblue}#2}\enspace{\color{darktext}| #5} & {\color{graytext}#1} \\
+    {\color{accentcolor}#3}, #4 & \\
+  \end{tabularx}%
+  \vspace{0.08em}%
+}
+
+\newcommand{\cvskill}[2]{%
+  \noindent{\color{headerblue}\bfseries #1:}\enskip{\color{darktext}#2}\\[0.05em]
+}
+
+%-------------------------------------------------------------------------------
+% DOCUMENT
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\fontsize{20}{24}\selectfont\bfseries\color{headerblue}Moein Razavi, Ph.D.}\\[0.2em]
+  {\color{darktext}\large
+    Senior AI/ML Engineer\gsep Medical Device Software \& Clinical AI\gsep Deep Learning \& Image Processing
+  }\\[0.3em]
+  {\color{graytext}
+    McKinney, TX (U.S., remote-ready)\gsep
+    (979) 676-7486\gsep
+    \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}
+  }\\[0.15em]
+  {\color{graytext}
+    \href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi}\gsep
+    \href{https://github.com/moeinrazavi}{github.com/moeinrazavi}\gsep
+    \href{https://moeinrazavi.github.io/moeinrazavi/}{moeinrazavi.github.io/moeinrazavi}\gsep
+    {\color{accentcolor}\href{https://scholar.google.com/citations?user=wj_qWaQAAAAJ}{Scholar (470+ citations)}}
+  }
+\end{center}
+
+\vspace{0.12em}
+{\color{goldaccent}\hrule height 1.5pt}
+\vspace{0.22em}
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+{\color{darktext}
+\textbf{Senior AI/ML engineer building and validating deep learning systems where correctness and safety matter.} Shipped \textbf{medical device software} at \textbf{CereVu Medical} --- wearable diagnostic patches, on-device clinical inference, \textbf{400+ patients across 5 clinical studies} --- and now build production ML platforms at \textbf{Ford}. \textbf{Ph.D.}\ plus \textbf{M.S.\ Computer Science} and \textbf{B.S.\ Mechanical Engineering} (4.0 GPA, Texas A\&M). Fluent in \textbf{Python and PyTorch}, with \textbf{6+ years of image processing and deep neural networks} plus \textbf{rigorous statistical validation} (grouped cross-validation, ROC-AUC, uncertainty quantification). \textbf{16 peer-reviewed publications} (470+ citations) --- practiced at turning complex systems into precise written documentation. Daily user of \textbf{agentic AI tools} (Claude Code, Codex, Cursor). Eager to go deep on FDA requirements, risk management, V\&V, and design history files. \textbf{U.S.-based} (McKinney, TX), remote since 2023, able to travel.
+}
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\cvskill{Deep Learning \& Image Processing}{\textbf{PyTorch (Expert)} \sdot{} TensorFlow \sdot{} Hugging Face \sdot{} CNNs \sdot{} U-Net \& Semantic Segmentation \sdot{} Object Detection (YOLO, Faster R-CNN) \sdot{} Vision \& Sequence Transformers (self-/cross-attention) \sdot{} Transfer Learning \sdot{} Focal Loss \& Class Imbalance \sdot{} OpenCV \sdot{} Core ML On-Device Inference}
+\cvskill{Medical Device \& Clinical AI}{Wearable diagnostic device software (hardware-to-cloud) \sdot{} Embedded clinical decision algorithms \sdot{} Clinical study data curation \& lineage \sdot{} Biosignal processing (EEG/ERP, PPG/HRV, sensor fusion) \sdot{} Implantable MEMS microelectrode design \& FEA verification \sdot{} Explainable AI (SHAP, LIME)}
+\cvskill{Statistics, Validation \& Documentation}{Grouped $k$-fold cross-validation \sdot{} ROC-AUC, sensitivity/specificity, F1 \sdot{} \mbox{Hypothesis} testing \& confidence intervals \sdot{} Monte Carlo \& uncertainty quantification \sdot{} Failure-mode analysis \sdot{} Unit/integration/system tests (pytest) \sdot{} Requirements-to-test traceability \sdot{} Configuration \& release management \sdot{} Specification writing}
+\cvskill{Agentic AI, LLMs \& RAG}{Claude Code \sdot{} Codex \sdot{} Cursor \sdot{} MCP \sdot{} LangGraph \sdot{} LangChain \sdot{} RAG (FAISS, ChromaDB) \sdot{} Guardrails \sdot{} Fine-tuning (LoRA/QLoRA)}
+\cvskill{Languages, Cloud \& Infrastructure}{\textbf{Python (Expert)} \sdot{} C++ \sdot{} Swift/SwiftUI \sdot{} TypeScript \sdot{} SQL \sdot{} MATLAB \sdot{} FastAPI \sdot{} REST/WebSocket \sdot{} React/Next.js \sdot{} Docker \sdot{} Terraform \sdot{} CI/CD (GitHub Actions) \sdot{} GCP (Vertex AI) \sdot{} AWS \sdot{} PySpark}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\cventry{Aug 2023 -- Present}{Senior Data Scientist \& AI/ML Engineer}{Ford Motor Company}{Detroit, MI (Remote)}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Own deep learning model development end to end} for safety-critical forecasting: transformers (\textbf{TFT}, \textbf{Chronos-2}) in \textbf{PyTorch}/Hugging Face with Optuna search on distributed GPUs --- \textbf{accuracy up 10\%}, \textbf{40\% faster training}
+  \item \textbf{Quantify and report model uncertainty} for decisions that cannot fail silently: \textbf{Monte Carlo simulation ($\sim$3{,}000 scenarios)} with \textbf{P50/P90 quantile reporting}, plus backtesting and drift monitoring on every deployment
+  \item \textbf{Use agentic AI daily as a productivity multiplier} and ship agentic systems in production: multi-agent platform (\textbf{LangGraph}, Vertex AI Gemini) with routing, retrieval (FAISS/ChromaDB), extraction, and \textbf{validation} agents --- replaced $\sim$\textbf{500 lines} of brittle parsers with one self-healing, schema-validating pipeline serving \textbf{10 U.S.\ states}
+  \item \textbf{Write production-grade, tested Python}: FastAPI services with unit/integration tests, code review, \textbf{SonarQube}, \textbf{\mbox{Terraform}} IaC, Tekton CI/CD --- \textbf{99.9\% uptime}; \textbf{10+ TB} data pipelines (PySpark, BigQuery, Airflow)
+  \item \textbf{Communicate results to non-technical audiences}: automated reporting for \textbf{500+ stakeholders}, turnaround down \textbf{45\%}
+\end{itemize}
+}
+
+\cventry{Jun 2023 -- Sep 2024}{Software Engineer \& AI/ML Researcher \enspace{\color{graytext}\normalsize(Medical Device Software)}}{CereVu Medical, Inc.}{San Francisco Bay Area, CA (Remote)}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Built end-to-end software for a wearable diagnostic medical device}: firmware-to-cloud pipeline streaming \textbf{9 physiological biomarkers} from sensor patches (Nordic UART BLE) through Python microservices to clinician applications, with the \textbf{ROPA pain detection algorithm} on the device path --- \textbf{monitoring precision up 30\%}
+  \item \textbf{Trained and validated deep learning models} (LSTM, CNN) on clinical biosignal data and \textbf{deployed them on-device} (Core ML) for real-time edge inference across \textbf{400+ patients in 5 clinical studies} --- \textbf{15\% accuracy improvement}
+  \item \textbf{Curated, documented, and versioned the clinical datasets behind every model}, tracking train/validation/test splits so results stayed reproducible and auditable across studies
+  \item \textbf{Translated clinical requirements into software specifications and test criteria} with clinicians and study investigators; authored algorithm and interface documentation used by engineering and clinical stakeholders
+  \item \textbf{Built Python microservices} (FastAPI, WebSocket) sustaining \textbf{10K+ concurrent biosignal streams} (\textbf{40\% lower latency}); shipped \textbf{2 iOS apps} and a React/Next.js clinical dashboard under CI/CD with automated test gates
+\end{itemize}
+}
+
+\cventry{Sep 2018 -- May 2024}{Graduate Researcher \& ML Engineer \enspace{\color{graytext}\normalsize(Clinical AI, Image Processing, Biosignals)}}{Texas A\&M University}{College Station, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Designed a dual-branch transformer} (1D-CNN tokenizer, rotary positional encoding, cross-attention fusion, stochastic depth, focal loss) for clinical stress detection from wearable physiological signals (\textbf{256 participants, 1.7B rows}); validated by \textbf{5-fold grouped cross-validation} at \textbf{AUC 0.993 / F1 0.965}, deployed on-device at \textbf{60\% faster inference}
+  \item \textbf{Delivered a production computer vision system} using deep object detection for real-time distancing and mask-compliance monitoring --- \textbf{98\% accuracy} over \textbf{50K+ daily interactions} (\textbf{76 citations}); built a \textbf{Conv-LSTM} gait model for fall-risk prediction (\textbf{93\% accuracy})
+  \item \textbf{Built an 18-feature HRV/PPG signal-processing pipeline} harmonizing \textbf{5 heterogeneous clinical datasets} with documented, reproducible preprocessing; applied \textbf{explainable AI} (SHAP, LIME) to clinical models and shipped \textit{GlucoseCoach}, an iOS + Flask app for personalized glucose monitoring
+  \item \textbf{Created OpenSync} --- documented open-source platform synchronizing EEG/ERP, eye-tracking, and biosensor streams, \textbf{adopted by 3 labs}; \textbf{synthesized 200+ studies} into a scoping review of clinical ML/DL methods (\textbf{79 citations})
+\end{itemize}
+}
+
+\cventry{2016 -- 2018}{Research Assistant \& Engineering Team Lead \enspace{\color{graytext}\normalsize(Implantable MEMS Neural Microelectrodes)}}{Cognitive Sciences \& Technologies Council}{Tehran, Iran}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Led the engineering team} designing single, planar, and 3D \textbf{implantable neural microelectrodes}: structural \textbf{FEA in ANSYS independently cross-validated in COMSOL Multiphysics} --- a two-solver verification strategy for a device intended for human neural tissue; published at \textbf{MEMS 2018}
+  \item \textbf{Built an EEG-based brain-computer interface for robot motion control}: acquisition, filtering, feature extraction (\mbox{MATLAB} DSP, EEGLab), classification, and embedded actuation (ARM/Arduino)
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% INDEPENDENT VENTURES
+%-------------------------------------------------------------------------------
+\cvsection{Independent Ventures \& Client Work}
+
+\cventry{Jan 2023 -- Present}{Founder \& Lead Developer}{Inspecalytics \enspace\textbar\enspace Clink Social}{McKinney, TX}{
+\begin{itemize}[leftmargin=0.4cm, itemsep=0.02cm, topsep=0.04cm, label={\color{goldaccent}\textbullet}]
+  \item \textbf{Scoped requirements directly with clients and shipped two production platforms solo}: a field-inspection suite with offline-first sync and \textbf{automated DOCX/PPTX report generation} (documentation cycles down \textbf{35\%}), plus a real-time social app with secure QR cross-device OAuth
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveducation{Aug 2021 -- Dec 2023}{Ph.D., Industrial Engineering (Data Science)}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Dissertation:} Advancing Stress Detection --- Real-Time, Naturalistic, and Personalized AI Approaches.}\\[0.1em]
+\cveducation{Aug 2019 -- May 2021}{M.S., Computer Science}{Texas A\&M University}{College Station, TX}{GPA: 4.0/4.0 | Research Fellowship}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Deep Learning, Computer Vision, Pattern Recognition, NLP, Software Engineering.}\\[0.1em]
+\cveducation{2013 -- 2018}{B.S., Mechanical Engineering}{Amirkabir University of Technology (Tehran Polytechnic)}{Tehran, Iran}{Top 1\% of $\sim$250{,}000 Nationwide}
+\noindent{\color{darktext}\hspace{0.4cm}\textit{Coursework:} Automatic Control, Robotics, FEM, Vibrations, Heat Transfer, CAD/CAM.}
+
+%-------------------------------------------------------------------------------
+% SELECTED PUBLICATIONS
+%-------------------------------------------------------------------------------
+\cvsection{Selected Publications \enspace{\color{graytext}\normalsize(16 peer-reviewed papers \sdot{} 470+ citations \sdot{} h-index 10)}}
+
+{\color{darktext}
+\textbf{Razavi, M.}, et al. ``ML \& DL for Stress \& Mental Disorder Detection: Scoping Review.'' \textit{JMIR Mental Health}, 2024. \textbf{[79 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``Distance \& Mask Monitoring via Deep Object Detection.'' \textit{SN Computer Science}, 2022. \textbf{[76 cites]}\\[0.04em]
+\textbf{Razavi, M.}, et al. ``OpenSync: Synchronizing Measures in Neuroscience.'' \textit{J.\ Neuroscience Methods}, 2022. \textbf{[31 cites]}\\[0.04em]
+\textbf{Razavi, M.}, Nadafi, R. ``Design of Single, Planar \& 3D Neural Microelectrodes (ANSYS/COMSOL).'' \textit{MEMS 2018}.
+}
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS & AWARDS
+%-------------------------------------------------------------------------------
+\cvsection{Certifications \& Honors}
+
+{\color{darktext}
+\textbf{Generative AI with LLMs} {\color{lightgray}-- AWS}\enskip\sdot\enskip
+\textbf{Deep Learning Specialization} {\color{lightgray}-- DeepLearning.AI}\enskip\sdot\enskip
+\textbf{Machine Learning} {\color{lightgray}-- \mbox{Stanford}}\enskip\sdot\enskip
+\textbf{NLP Specialization} {\color{lightgray}-- DeepLearning.AI}\enskip\sdot\enskip
+\textbf{Advanced MLOps} {\color{lightgray}-- Coursera}\enskip\sdot\enskip
+\textbf{Bayesian Statistics} {\color{lightgray}-- Coursera}\enskip\sdot\enskip
+\textbf{Graduate \mbox{Research} Fellowship} \& \textbf{Dean's List}, Texas A\&M (2019--2023)\enskip\sdot\enskip
+\textbf{IEEE} \& \textbf{HFES} Member
+}
+
+\end{document}

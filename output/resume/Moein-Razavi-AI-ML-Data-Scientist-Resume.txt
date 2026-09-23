@@ -1,0 +1,49 @@
+Moein Razavi
+AI/ML Engineer | Data Scientist
+McKinney, TX | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi
+
+Professional Summary
+Ph.D.-trained data scientist building machine learning and AI applications for electric vehicle energy analytics. At Ford, develops forecasting models, LLM-based data tools, and cloud services using Python, SQL, and Google Cloud. Combines model development with data engineering and application delivery; published research covers wearable stress detection and sensor synchronization.
+
+Technical Skills
+Languages and Data: Python, SQL, pandas, NumPy, PySpark, BigQuery, Apache Airflow
+Machine Learning: PyTorch, TensorFlow, scikit-learn, XGBoost, Hugging Face, Optuna, time-series forecasting
+Generative AI: LangChain, Gemini, retrieval-augmented generation (RAG), text-to-SQL, BM25, LLM routing
+Cloud and Deployment: GCP, Vertex AI, Cloud Run, FastAPI, Flask, Docker, Terraform, Tekton CI/CD
+
+Professional Experience
+Ford Motor Company
+Data Scientist | Aug 2023 - Present
+- Built an EV analytics assistant that answers questions from BigQuery data and technical documents. Routed requests to SQL generation or BM25 document search, with a separate LLM check against domain rules.
+- Standardized utility data from 5 file formats (CSV, Excel, PDF, XML, HTML) into a 7-column schema using FastAPI, pandas, and Vertex AI Gemini, with checks on timestamps, value ranges, and required fields.
+- Developed vehicle-to-grid (V2G) dispatch software using vehicle-availability forecasts and approximately 3,000 Monte Carlo scenarios per decision to estimate fleet capacity and select vehicles for energy commitments.
+- Trained transformer forecasting models, including Temporal Fusion Transformer (TFT) and Autoformer, with Optuna tuning on Vertex AI GPUs; compared forecasts with a previous-week baseline.
+- Built XGBoost models to estimate EV electricity bills from vehicle telemetry, utility tariffs, parking behavior, and household consumption, supplying bill predictions to a rate recommendation application.
+- Automated energy-data preparation with PySpark, BigQuery, and Airflow; delivered a Flask/Dash rate recommendation application on Cloud Run with Tekton deployment pipelines.
+CereVu Medical, Inc.
+Software Developer / Research Engineer (Contract) | Jun 2023 - Sep 2024
+- Developed 2 SwiftUI apps, Vitality and Clinical, to display 9 physiological signals from wearable sensors, with CoreBluetooth integration and Python services for biosignal streaming.
+- Developed a React/Next.js dashboard with MongoDB and role-based access for reviewing physiological data.
+
+Research Experience
+Texas A&M University
+Research Assistant | Sep 2018 - May 2024
+- Developed and evaluated stress-detection models using heart-rate and hand-acceleration data from 54 college students over 40 days, with time-stamped self-reports as stress labels.
+- Compared machine learning models and identified heart-rate and motion features associated with stress; reported XGBoost findings in a first-author study to inform wearable stress-detection tools.
+- Co-developed OpenSync to synchronize neuroscience sensors using Python and Lab Streaming Layer; published tests measured below 0.07 ms root-mean-square (RMS) recording-time lag across 4 device configurations.
+- Developed computer vision methods for physical-distance and face-mask monitoring; co-authored a scoping review of ML, deep learning, and preprocessing for stress-related mental health research.
+
+Selected AI Project
+Business Action Prioritizer
+- Built a Google ADK application that converts uploaded spreadsheets and a scoring rubric into a proposed analysis plan, requests user approval, and executes the approved steps with a PandasAI helper.
+- Generated ranked recommendations and reports, with downloadable outputs stored in Google Cloud Storage through a Model Context Protocol (MCP) tool.
+
+Education
+Ph.D., Industrial Engineering | Texas A&M University | Dec 2023
+Master of Engineering, Computer Engineering | Texas A&M University | May 2021
+
+Selected Publications
+Razavi, M., et al. (2024). Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. JMIR Mental Health, 11, e53714. doi:10.2196/53714.
+Razavi, M., et al. (2023). Evaluating Mental Stress Among College Students Using Heart Rate and Hand Acceleration Data Collected from Wearable Sensors. arXiv preprint, arXiv:2309.11097.
+Razavi, M., et al. (2022). OpenSync: An open-source platform for synchronizing multiple measures in neuroscience experiments. Journal of Neuroscience Methods, 369, 109458. doi:10.1016/j.jneumeth.2021.109458.

@@ -1,0 +1,52 @@
+Moein Razavi
+Software Engineer | Backend and Mobile Applications
+McKinney, TX | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi
+
+Professional Summary
+Software developer and data scientist building Python services, cloud data applications, and SwiftUI mobile apps. Experience spans Ford energy analytics, CereVu wearable sensor software, and independently developed inspection and social applications. Works across APIs, data storage, authentication, device integration, and automated releases. Ph.D. in Industrial Engineering and master's in Computer Engineering.
+
+Technical Skills
+Languages: Python, Swift, TypeScript, JavaScript, SQL
+Backend and Web: FastAPI, Flask, REST APIs, WebSocket, React, Next.js, Node.js
+Mobile: SwiftUI, UIKit, CoreBluetooth, Combine, AVFoundation, MVVM, TestFlight
+Data and Cloud: GCP, Cloud Run, BigQuery, MongoDB, Firebase, Supabase, PySpark, Airflow
+Delivery and Access: Docker, Terraform, Tekton, GitHub Actions, Fastlane, OAuth 2.0, JWT, SAML
+
+Professional Experience
+Ford Motor Company
+Data Scientist | Aug 2023 - Present
+- Delivered a utility rate recommendation application that connects energy-data analysis with an authenticated Dash interface, using Flask REST APIs, BigQuery, SAML/ADFS, Cloud Run, and Tekton CI/CD.
+- Built a FastAPI service that converts 5 utility-file formats into a standard 7-column dataset, with validation, retry limits, and BigQuery MERGE operations to support repeatable data loads.
+- Built PySpark and Airflow workflows for energy-simulation data, plus REST APIs and Looker Studio dashboards for operational and EV discharge reporting.
+- Built a code-analysis web application using Python AST parsing and LLM-generated recommendations; streamed each result to the browser through FastAPI so users could review findings while analysis continued.
+CereVu Medical, Inc.
+Software Developer / Research Engineer (Contract) | Jun 2023 - Sep 2024
+- Developed 2 iOS apps, Vitality and Clinical, to acquire and chart 9 physiological signals from wearable sensors using SwiftUI, CoreBluetooth, and Swift Charts.
+- Migrated the Clinical app from UIKit to modular SwiftUI components using MVVM-Coordinator, supporting 3 user roles (patient, physician, administrator), sensor calibration, and CSV export.
+- Built Flask/FastAPI services for biosignal streaming over WebSocket and a React/Next.js dashboard backed by MongoDB for reviewing patient data.
+- Implemented authentication and role-based access with OAuth 2.0 and JWT, and supported iOS release workflows through TestFlight.
+
+Selected Software Projects
+Inspecalytics | Field Inspection Application
+- Built a SwiftUI inspection app and companion web interface sharing a Supabase backend, connecting field data capture, annotated photos, and report generation.
+- Enabled inspections without a network connection through local data capture and later cloud synchronization, using change detection and concurrent image transfers to reconcile records and photos.
+- Automated Word and PowerPoint reports from inspection data and annotated photos; configured Fastlane and GitHub Actions to build and distribute TestFlight releases.
+Clink Social | Social Application
+- Built a SwiftUI application using Firebase Authentication, Firestore, Storage, and Cloud Messaging, with real-time messaging, MapKit discovery, and a social feed.
+- Implemented TypeScript/Node.js cloud functions for feed aggregation and push notifications, plus a QR-based cross-device sign-in flow using time-limited codes and token exchange.
+
+Research Experience
+Texas A&M University
+Research Assistant | Sep 2018 - May 2024
+- Co-developed OpenSync, an open-source Python platform that integrates EEG, eye-tracking, physiological sensors, and experiment events using Lab Streaming Layer for synchronized recording.
+- Validated recording timing across 4 device configurations in 5- and 60-minute tests; published benchmarks measured below 0.07 ms root-mean-square (RMS) recording-time lag.
+- Developed GlucoseCoach, an iOS application with a Flask backend for personalized glucose monitoring.
+OpenSync source: github.com/TAMUCogLab/OpenSync
+
+Education
+Ph.D., Industrial Engineering | Texas A&M University | Dec 2023
+Master of Engineering, Computer Engineering | Texas A&M University | May 2021
+
+Selected Publication
+Razavi, M., et al. (2022). OpenSync: An open-source platform for synchronizing multiple measures in neuroscience experiments. Journal of Neuroscience Methods, 369, 109458. doi:10.1016/j.jneumeth.2021.109458.

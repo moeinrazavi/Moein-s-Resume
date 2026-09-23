@@ -1,0 +1,96 @@
+% Compile with Tectonic or XeLaTeX (Overleaf: select XeLaTeX).
+% Business metrics are supplied and confirmed by the candidate.
+% No forecasting metric, evaluation period, or people-management claim is inferred.
+% GPAs confirmed by candidate. Experience spans Sep 2018-present, with overlapping
+% appointments counted once; Ford tenure starts Aug 2023.
+% Neural evidence: XGrant-Paper/data/notebooks/Model_Comparison-checkpoint.ipynb,
+% cell 30 (Keras dense MLP); mHELP StressDetector.swift and bundled Core ML
+% metadata (scikit-learn/XGBoost). Later branch fwd/spring2025-transformer:
+% a129173 (2026-03-17) adds a PyTorch/TorchScript-derived transformer Core ML
+% package and Swift inference with 300-point sequences and 18 features;
+% 5c50029 and 9d01102 repair integration, d6aa89c relocates watch sources.
+% March commits are recorded under github-actions[bot], not a named candidate
+% identity. Contribution follows the candidate's account; Git authorship alone
+% does not independently establish it. No unverified training scores are used.
+% The 2026 integration is listed separately from the 2018-2024 TAMU employment.
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=0.7in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf]
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.5pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=11pt,label=\textbullet,itemsep=3.5pt,parsep=0pt,topsep=2pt,partopsep=0pt}
+\newcommand{\ressection}[1]{\par\addvspace{8pt}\needspace{3\baselineskip}{\fontsize{11.5}{14}\selectfont\bfseries #1}\par\nobreak}
+\newcommand{\employer}[1]{\par\addvspace{3pt}\needspace{4\baselineskip}\textbf{#1}\par\nobreak}
+\hypersetup{pdftitle={Moein Razavi - AI/ML Engineer},pdfauthor={Moein Razavi}}
+\begin{document}
+\fontsize{10.5}{12.7}\selectfont
+\raggedright
+
+{\fontsize{22}{26}\selectfont\bfseries Moein Razavi}\par
+\textbf{AI/ML Engineer | Generative AI, Forecasting \& Cloud Applications}\par
+McKinney, TX | (979) 676-7486 | razavi.moein94@gmail.com\par
+\href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi} | \href{https://github.com/moeinrazavi}{github.com/moeinrazavi} | \href{https://scholar.google.com/citations?hl=en&user=t2fdg1YAAAAJ}{Google Scholar}\par
+\ressection{Professional Summary}
+AI/ML engineer and data scientist with 8+ years across applied research and industry, including 3+ years at Ford. Builds deep learning, generative AI, and cloud applications spanning wearable sensing, document RAG, text-to-SQL, and electricity-market forecasting. Combines Python/PyTorch model development with data engineering and mobile/web delivery.\par
+\ressection{Professional Experience}
+\employer{Ford Motor Company}
+Data Scientist | Aug 2023 - Present\par
+\begin{itemize}
+\item \textbf{EV analytics assistant:} Reduced time spent answering recurring analytics and document questions by 30\% through natural-language access to BigQuery, legal documents, and vehicle manuals. Designed LangChain/GPT-4o orchestration for BM25-based retrieval-augmented generation (RAG) and schema-aware text-to-SQL agents, with intent routing, conversational context, and domain-rule answer checks; deployed Dash on Cloud Run with SAML/ADFS authentication.
+\item \textbf{Vehicle-to-grid market bidding:} Reduced vehicle-availability forecast error by approximately 14\% relative to the previous baseline, supporting capacity estimates for electricity-market bids. Selected PatchTST through model comparisons; tuned candidates with Python/PyTorch and Optuna on Vertex AI GPUs. Combined ERCOT prices via gridstatus, Monte Carlo capacity estimates, greedy vehicle selection, and load reallocation after disconnections.
+\item \textbf{Utility data onboarding (HOMELOAD):} Reduced manual electricity-data preparation time by approximately 50\% with a Python/FastAPI pipeline combining Gemini schema discovery, pandas/lxml extraction, deterministic validation, and bounded corrective retries. Used BigQuery MERGE for repeatable loads; deployed with Docker, Cloud Run, and Terraform.
+\item \textbf{Rate recommendation:} Built utility-plan comparisons using XGBoost bill predictions from tariffs, vehicle telemetry, and household consumption. Delivered Flask APIs backed by BigQuery and a SAML-authenticated Dash interface on Cloud Run through Tekton CI/CD.
+\item \textbf{Energy data engineering and reporting:} Automated simulator-input preparation and optimizer-output processing with PySpark, BigQuery, and Airflow. Delivered Looker Studio discharge reporting and REST APIs for reviewing energy performance in operational dashboards.
+\item \textbf{Code analysis and cloud cost estimation:} Built a FastAPI/LangChain tool for engineering code reviews using GitPython, AST parsing, and Server-Sent Events. Generated LLM-assisted complexity estimates; calculated Vertex AI costs from assumed resources and static pricing.
+\end{itemize}
+\employer{CereVu Medical, Inc.}
+Software Developer / Research Engineer (Concurrent Contract) | Jun 2023 - Sep 2024\par
+\begin{itemize}
+\item \textbf{Wearable health platform:} Developed Vitality and Clinical, two SwiftUI apps for capturing and reviewing 9 physiological signals through CoreBluetooth BLE and Swift Charts. Migrated Clinical from UIKit to an MVVM-Coordinator architecture supporting calibration, exports, role-based workflows, and OAuth 2.0/JWT authentication.
+\item \textbf{Backend and delivery:} Connected wearable data to a React/Next.js dashboard through Python/Flask services, WebSocket streaming, and MongoDB. Deployed Docker services on AWS EC2 with GitHub Actions and distributed iOS builds through TestFlight.
+\end{itemize}
+\ressection{Education}
+\textbf{Ph.D., Industrial Engineering} | Texas A\&M University | Dec 2023 | GPA: 4.0/4.0\par
+\textbf{Master of Engineering, Computer Engineering} | Texas A\&M University | May 2021 | GPA: 4.0/4.0\par
+\newpage
+\ressection{Selected Projects}
+\begin{itemize}
+\item \textbf{mHELP transformer integration (2026):} Integrated a PyTorch-exported transformer into Apple Watch stress detection using Core ML, combining 300-point heart-rate sequences with 18 engineered features. Implemented Swift preprocessing, sequence resampling, normalization with exported scalers, and probability-based alerts.
+\item \textbf{Business Action Prioritizer:} Designed a Google ADK/Gemini workflow that turns business data and scoring rubrics into ranked actions with supporting analysis. Gated PandasAI execution on user approval; implemented FastAPI/SQLite sessions and MCP report delivery through Cloud Storage.
+\item \textbf{Inspecalytics:} Reduced inspection-report preparation time by approximately 50\% by connecting annotated photos directly to Word/PowerPoint reports using SwiftUI, React/TypeScript, and Supabase. Implemented offline edit conflict resolution, ARKit/Apple Vision photo organization, and XCTest/Vitest tests.
+\item \textbf{Clink Social:} Built SwiftUI/MapKit discovery and messaging with Firebase. Implemented TypeScript Cloud Functions for feeds and notifications, plus QR-based sign-in using time-limited OAuth/JWT tokens.
+\end{itemize}
+\ressection{Research Experience}
+\employer{Texas A\&M University}
+Research Assistant | Sep 2018 - May 2024\par
+Published research in machine learning and sensing; 500+ Google Scholar citations (September 2026).\par
+\begin{itemize}
+\item \textbf{Wearable stress detection:} Evaluated heart-rate/motion classifiers on data from 54 students over 40 days using cross-validation, ROC-AUC, and SHAP. Trained Keras multilayer perceptrons on physiological features and contributed to mHELP's earlier scikit-learn/XGBoost inference pipeline.
+\item \textbf{MERCURY:} Co-authored research using random projection with quantization and cached computation reuse; reported 1.97x average training speedup across 12 models with accuracy similar to baseline.
+\item \textbf{OpenSync:} Co-developed open-source Python software using Lab Streaming Layer to synchronize sensors and experiment events; published tests measured RMS recording-time lag below 0.07 ms. \href{https://github.com/TAMUCogLab/OpenSync}{GitHub repository}.
+\item \textbf{Computer vision:} Developed face-mask and physical-distance monitoring using TensorFlow Faster R-CNN detectors and calibrated perspective transforms to measure distances in video.
+\item \textbf{GlucoseCoach:} Built an iOS application and Python/Flask backend for glucose monitoring.
+\end{itemize}
+\ressection{Technical Skills}
+\textbf{Core Languages:} Python, SQL, TypeScript/JavaScript, Swift; additional: C++, Java, R, MATLAB\par
+\textbf{ML Frameworks:} PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, Hugging Face, Optuna, OpenCV\par
+\textbf{ML Methods:} Deep learning (MLPs, CNNs, transformers), time-series forecasting, Monte Carlo, SHAP/LIME\par
+\textbf{Generative AI:} LangChain, Google ADK, Gemini, RAG, BM25, agent routing, text-to-SQL, MCP, PandasAI\par
+\textbf{Data:} BigQuery, PySpark, Airflow, pandas, NumPy, PostgreSQL, MongoDB, Firebase, Supabase\par
+\textbf{Software Engineering:} FastAPI, Flask, REST, WebSocket, React/Next.js, SwiftUI, Core ML, CoreBluetooth, OAuth/JWT/SAML\par
+\textbf{Cloud:} GCP (Vertex AI, Cloud Run, Dataproc), AWS (EC2, S3, Lambda, SageMaker), Azure OpenAI\par
+\textbf{Delivery and Testing:} Docker, Terraform, Kubernetes, Git, GitHub Actions, Tekton, AWS CodeDeploy, Fastlane, TestFlight, XCTest, Vitest\par
+\ressection{Selected Publications}
+Razavi, M., et al. \href{https://doi.org/10.2196/53714}{Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review.} JMIR Mental Health, 2024.\par
+Janfaza, V., Weston, K., Razavi, M., et al. \href{https://doi.org/10.1109/HPCA56546.2023.10071051}{MERCURY: Accelerating DNN Training By Exploiting Input Similarity.} IEEE HPCA, 2023.\par
+Razavi, M., et al. \href{https://doi.org/10.1016/j.jneumeth.2021.109458}{OpenSync: An open-source platform for synchronizing multiple measures in neuroscience experiments.} Journal of Neuroscience Methods, 2022.\par
+\end{document}

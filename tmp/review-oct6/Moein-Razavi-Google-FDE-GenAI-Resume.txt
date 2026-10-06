@@ -1,0 +1,101 @@
+Moein Razavi, Ph.D.
+Generative AI Engineer | Agentic Systems, RAG & Production AI on Google Cloud
+Dallas, TX area (McKinney) | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi | Google Scholar (500+ citations)
+SUMMARY
+Builder-engineer with a Ph.D. and 8+ years of Python software development who takes generative AI from prototype to
+production on Google Cloud. At Ford, I architect, code, and launch agentic systems for business teams: multi-agent
+assistants with routing, hierarchical delegation, and checker agents; RAG and text-to-SQL over structured and
+unstructured data; and Gemini-powered ingestion pipelines that connect messy third-party data to BigQuery, cutting
+manual work by 30–60%. I deploy on Vertex AI and Cloud Run with Terraform and CI/CD, and design security
+boundaries (SAML/ADFS SSO, PII redaction) plus evaluation and validation into every system. As a founder and an
+embedded contract engineer, I have run requirements discovery directly with customers and shipped what they needed.
+CORE QUALIFICATIONS
+• Production AI on GCP, conception to launch: Vertex AI, Gemini, Cloud Run, BigQuery, Dataproc, Cloud Storage,
+Terraform, Docker, Tekton and GitHub Actions CI/CD.
+• Agentic systems: Google ADK, LangGraph, LangChain, Model Context Protocol (MCP) servers; intent routing,
+hierarchical delegation, self-reflection via checker agents and validate-and-retry loops, human-in-the-loop approval.
+• Data for enterprise AI: RAG over unstructured documents, schema-aware text-to-SQL over structured data, BM25
+and vector search (FAISS, ChromaDB), LLM-driven schema discovery and extraction from PDF, HTML, XML, and
+spreadsheets.
+• Evaluation and reliability: deterministic output validation, domain-rule answer checks, grouped cross-validation,
+bootstrap confidence intervals, backtesting against baselines, cost estimation for Vertex AI workloads.
+PROFESSIONAL EXPERIENCE
+Ford Motor Company
+Aug 2023 – Present
+Senior Data Scientist (Generative AI and Machine Learning) | Remote
+• Multi-agent analytics assistant, prototype to production: Cut time spent answering recurring analytics and
+document questions by 30%. An intent router delegates each request to a schema-aware text-to-SQL agent over
+BigQuery or a RAG agent over legal documents and vehicle manuals, and a checker agent reviews every answer
+against domain rules before it reaches the user. Built with LangChain and GPT-4o; launched on Cloud Run behind
+SAML/ADFS single sign-on.
+• Agentic ingestion of unstructured third-party data (HOMELOAD): Reduced manual data preparation by ~50%
+with a 5-agent Python/FastAPI service that connects inconsistent utility-bill data (CSV, Excel, PDF, XML, HTML) to
+BigQuery. Gemini performs schema discovery and extraction planning; PII redaction, deterministic validation,
+bounded self-correcting retries, and idempotent BigQuery MERGE loads make it production-safe. Deployed with
+Docker, Cloud Run, and Terraform.
+• LLM developer tooling: Reduced manual code-review time by 60% with a FastAPI service that parses repositories
+(GitPython, Python AST), streams LLM-assisted complexity reviews to the browser over Server-Sent Events, and
+estimates the Vertex AI cost of running the code.
+• Transformer forecasting on Vertex AI: Reduced vehicle-availability forecast error by ~14% versus the previous
+baseline across ~9,500 vehicles with PatchTST-style transformers in PyTorch, benchmarked against TimesFM,
+MOIRAI-2, and iTransformer and tuned with Optuna on Vertex AI GPUs; Monte Carlo capacity estimates feed
+ERCOT electricity-market bids.
+• Data foundations for AI: Build and maintain EV telemetry pipelines processing 10+ TB across 15 Airflow DAGs
+(PySpark on Dataproc, BigQuery, Dataform) and debug production data issues end to end; delivered XGBoost
+bill-prediction APIs (Flask, BigQuery) with a SAML-authenticated Dash front end through Tekton CI/CD.
+CereVu Medical, Inc.
+Jun 2023 – Sep 2024
+Software Developer / Research Engineer (Embedded Contract Engineer) | Remote
+• Embedded with a medical-device startup’s team: turned clinician and founder requirements into software, then
+developed and launched two SwiftUI iOS apps capturing 9 physiological signals from wearable sensors over
+Bluetooth Low Energy, through TestFlight and App Store submissions.
+• Built the connective layer from device to clinician: Python/Flask services with WebSocket streaming and MongoDB
+feeding a React/Next.js dashboard, OAuth 2.0/JWT authentication with role-based access, and Docker services on
+AWS EC2 with GitHub Actions CI/CD.
+Texas A&M University
+Sep 2018 – May 2024
+Graduate Research Assistant (Machine Learning) | College Station, TX
+• Rigorous model evaluation (first author): Built the evaluation pipeline for wearable stress detection on Apple
+Watch data from 50+ participants: participant-grouped cross-validation, bootstrap confidence intervals, permutation
+tests, fixed false-positive-rate operating points, and SHAP explanations across 6 model families.
+• MERCURY (IEEE HPCA 2023, co-author): Accelerated deep neural network training with random projection,
+quantization, and cached computation reuse; reported 1.97x average speedup across 12 models at baseline-level
+accuracy.
+• Computer vision (first author): Fine-tuned TensorFlow Faster R-CNN detectors to 99.8% face-mask classification
+accuracy on a 3,300-image dataset and measured worker distancing in construction video; built OpenSync, an
+open-source Python sensor-synchronization platform (sub-0.07 ms RMS lag) released on PyPI.
+SELECTED PROJECTS
+• Business Action Prioritizer (Google ADK, Gemini, MCP): Built a 4-stage agent application that turns business
+spreadsheets and a scoring rubric into ranked actions. A planning agent proposes the analysis and pauses for
+human approval; an execution agent tracks plan state and delegates to a PandasAI child agent; an MCP server
+delivers reports through signed Cloud Storage URLs; FastAPI and SQLite persist sessions.
+• Inspecalytics (Founder & Technical Lead, 2023 – Present): Ran discovery with inspection clients, then designed
+and launched a product that cut inspection-report preparation time by ~50%: SwiftUI iOS app, React/TypeScript web
+app, Supabase (PostgreSQL), offline edit conflict resolution, Apple Vision photo organization, automated
+Word/PowerPoint reports, and XCTest/Vitest test suites.
+• On-device transformer (mHELP, 2026): Deployed a PyTorch-trained transformer to Apple Watch through Core ML,
+reimplementing training-time preprocessing in Swift so on-device predictions match the trained model.
+TECHNICAL SKILLS
+Languages: Python (8+ years), SQL, TypeScript/JavaScript, Swift, C++, Java
+Generative AI: Gemini, GPT-4o, Claude; Google ADK, LangGraph, LangChain, MCP, PandasAI; RAG, text-to-SQL,
+tool calling, structured outputs, prompt design
+Google Cloud: Vertex AI, Cloud Run, BigQuery, Dataproc, Dataform, Cloud Storage; also AWS (EC2, S3, Lambda)
+Machine Learning: PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, Hugging Face, Optuna, transformers,
+time-series forecasting, computer vision, SHAP
+Engineering: FastAPI, Flask, REST, WebSocket, Server-Sent Events, PySpark, Airflow, PostgreSQL, MongoDB,
+Docker, Kubernetes, Terraform, Tekton, GitHub Actions, OAuth 2.0, JWT, SAML/ADFS, React/Next.js, SwiftUI
+EDUCATION
+Ph.D., Industrial Engineering | Texas A&M University | GPA 4.0/4.0
+Dec 2023
+Master of Engineering, Computer Engineering | Texas A&M University | GPA 4.0/4.0
+May 2021
+B.S., Mechanical Engineering | Amirkabir University of Technology (Tehran Polytechnic)
+Jun 2018
+SELECTED PUBLICATIONS
+Janfaza, V., Weston, K., Razavi, M., et al. MERCURY: Accelerating DNN Training by Exploiting Input Similarity. IEEE
+HPCA, 2023.
+Razavi, M., et al. Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and
+Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. JMIR Mental Health, 2024.
+Razavi, M., et al. OpenSync: An Open-Source Platform for Synchronizing Multiple Measures in Neuroscience
+Experiments. Journal of Neuroscience Methods, 2022.

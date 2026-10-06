@@ -1,0 +1,102 @@
+% Compile: tectonic Moein-Razavi-Resume-2026.tex
+% ATS-safe: one column, no tables/graphics/icons, standard section names,
+% system font with a clean text layer, no hyphenation, no ligatures.
+% Metrics follow the candidate's Oct 2026 resume (MoeinRazavi-Resume.pdf) and the
+% fact notes in build_unified_resume.py; research details follow the NIW career
+% summary and XGrant-Paper/results/paper_numbers.md.
+\documentclass[letterpaper,10pt]{article}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}[Ligatures=NoCommon]
+\usepackage{xcolor}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+\hypersetup{
+  pdftitle={Moein Razavi - Senior AI/ML Engineer Resume},
+  pdfauthor={Moein Razavi},
+  pdfsubject={Senior AI/ML Engineer - Generative AI, Agentic Systems, Machine Learning, Google Cloud},
+  pdfkeywords={AI Engineer, Machine Learning Engineer, Generative AI, LLM, Agentic AI, Multi-Agent Systems, RAG, Text-to-SQL, Python, PyTorch, Google Cloud, Vertex AI, Gemini, MCP, FastAPI, Data Science}
+}
+\definecolor{ink}{RGB}{20,45,85}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\titleformat{\section}{\fontsize{11}{13}\selectfont\bfseries\color{ink}}{}{0pt}{\MakeUppercase}[\vspace{1pt}\color{ink}\hrule height 0.6pt]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=12pt,label=\textbullet,itemsep=1.6pt,parsep=0pt,topsep=1.5pt,partopsep=0pt}
+\newcommand{\role}[3]{\par\addvspace{3pt}\needspace{5\baselineskip}\textbf{#1}\hfill #3\par{\itshape #2}\par}
+
+\begin{document}
+\fontsize{10}{12.1}\selectfont
+
+{\centering
+{\fontsize{20}{24}\selectfont\bfseries\color{ink} Moein Razavi, Ph.D.}\par\vspace{2pt}
+{\fontsize{11}{13}\selectfont\bfseries Senior AI/ML Engineer \textbar{} Generative AI \& Agentic Systems \textbar{} Machine Learning \textbar{} Google Cloud}\par\vspace{2pt}
+McKinney, TX (Dallas--Fort Worth) \textbar{} (979) 676-7486 \textbar{} \href{mailto:razavi.moein94@gmail.com}{razavi.moein94@gmail.com}\par
+\href{https://linkedin.com/in/moein-razavi}{linkedin.com/in/moein-razavi} \textbar{} \href{https://github.com/moeinrazavi}{github.com/moeinrazavi} \textbar{} \href{https://scholar.google.com/citations?hl=en&user=t2fdg1YAAAAJ}{Google Scholar (500+ citations)}\par
+}
+
+\section{Summary}
+AI/ML engineer with a Ph.D. and 8+ years of Python experience across industry and applied research, including 3+ years at Ford building and running production AI on Google Cloud. Designs multi-agent LLM systems, retrieval-augmented generation (RAG), text-to-SQL, and document-extraction pipelines that have cut manual work by 30--60\%, and builds deep learning forecasting models in PyTorch. Delivers end to end, from ambiguous requirements to tested, deployed services (FastAPI, Docker, Cloud Run, Terraform, CI/CD), and has launched iOS and web products as a founder. Published researcher in machine learning, wearable sensing, and deep neural network training acceleration.
+
+\section{Technical Skills}
+\textbf{Generative AI \& Agents:} Multi-agent systems, Google ADK, LangChain, LangGraph, Model Context Protocol (MCP), RAG, BM25 and vector search (FAISS, ChromaDB), text-to-SQL, tool calling, structured outputs, human-in-the-loop approval, LLM output validation; Gemini, GPT-4o, Claude\par
+\textbf{Machine Learning:} PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, Hugging Face, Optuna; transformers (PatchTST, TimesFM, iTransformer), time-series forecasting, computer vision (Faster R-CNN), Monte Carlo simulation, SHAP, Core ML\par
+\textbf{Languages:} Python, SQL, TypeScript/JavaScript, Swift, C++, Java\par
+\textbf{Backend \& Data:} FastAPI, Flask, REST, WebSocket, Server-Sent Events, PySpark, Apache Airflow, BigQuery, Dataform, pandas, PostgreSQL, MongoDB, Supabase, Firebase\par
+\textbf{Cloud \& DevOps:} Google Cloud (Vertex AI, Cloud Run, BigQuery, Dataproc, Cloud Storage), AWS (EC2, S3, Lambda), Docker, Kubernetes, Terraform, Tekton, GitHub Actions\par
+\textbf{Security \& Frontend:} OAuth 2.0, JWT, SAML/ADFS SSO, role-based access control, PII redaction; React/Next.js, Dash, SwiftUI\par
+
+\section{Professional Experience}
+\role{Ford Motor Company}{Senior Data Scientist \textbar{} Remote}{Aug 2023 -- Present}
+\begin{itemize}
+\item \textbf{Multi-agent analytics assistant:} Cut time spent answering recurring analytics and document questions by \textbf{30\%} with a LangChain/GPT-4o system in which an intent router delegates to a schema-aware text-to-SQL agent over BigQuery and a BM25 RAG agent over legal documents and vehicle manuals; a checker agent validates answers against domain rules. Launched on Cloud Run behind SAML/ADFS single sign-on.
+\item \textbf{Document-to-data ingestion (HOMELOAD):} Reduced manual data preparation by \textbf{\textasciitilde 50\%} with a 5-agent Python/FastAPI service that converts inconsistent third-party utility bills (CSV, Excel, PDF, XML, HTML) into a standard schema using Gemini schema discovery, PII redaction, deterministic validation, bounded self-correcting retries, and idempotent BigQuery MERGE loads; deployed with Docker, Cloud Run, and Terraform.
+\item \textbf{AI code-review tooling:} Reduced manual code-review time by \textbf{60\%} with a FastAPI service that parses repositories (GitPython, Python AST), streams LLM-assisted complexity reviews over Server-Sent Events, and estimates Vertex AI compute cost.
+\item \textbf{Transformer forecasting for energy-market bids:} Reduced vehicle-availability forecast error by \textbf{\textasciitilde 14\%} versus the previous baseline across \textbf{\textasciitilde 9,500 vehicles} by building PatchTST-style transformers in PyTorch, benchmarking TimesFM, MOIRAI-2, and iTransformer, and tuning with Optuna on Vertex AI GPUs. Monte Carlo capacity estimates and greedy vehicle selection feed ERCOT vehicle-to-grid market bids.
+\item \textbf{Distributed data pipelines:} Build and maintain EV telemetry pipelines processing \textbf{10+ TB} across \textbf{15 Airflow DAGs} (PySpark on Dataproc, BigQuery, Dataform); debug production data issues end to end, including time-of-use rate and savings calculations behind smart-charging reports.
+\item \textbf{ML services:} Delivered a utility-rate recommendation service with XGBoost bill predictions, Flask REST APIs on BigQuery, and a SAML-authenticated Dash front end, released on Cloud Run through Tekton CI/CD.
+\end{itemize}
+
+\role{CereVu Medical, Inc.}{Software Developer / Research Engineer (Contract) \textbar{} Remote}{Jun 2023 -- Sep 2024}
+\begin{itemize}
+\item Developed and launched \textbf{two SwiftUI iOS apps} (Vitality and Clinical) that capture \textbf{9 physiological signals} from wearable sensors over CoreBluetooth BLE, distributed through TestFlight and App Store submissions.
+\item Re-architected the Clinical app from UIKit to MVVM-Coordinator, adding sensor calibration, data export, role-based workflows (patient, physician, administrator), and OAuth 2.0/JWT authentication.
+\item Built Python/Flask services with WebSocket streaming and MongoDB feeding a React/Next.js clinician dashboard; deployed Docker services on AWS EC2 with GitHub Actions CI/CD.
+\end{itemize}
+
+\role{Texas A\&M University}{Graduate Research Assistant (Machine Learning, Wearable Sensing, Computer Vision) \textbar{} College Station, TX}{Sep 2018 -- May 2024}
+\begin{itemize}
+\item \textbf{Wearable stress detection (first author):} Built the modeling and evaluation pipeline for Apple Watch heart-rate and motion data from 50+ participants: participant-grouped cross-validation, bootstrap confidence intervals, permutation tests, fixed false-positive-rate operating points, and SHAP explanations across 6 model families.
+\item \textbf{MERCURY (IEEE HPCA 2023, co-author):} Accelerated deep neural network training with random projection, quantization, and cached computation reuse; reported \textbf{1.97x} average training speedup across 12 models at baseline-level accuracy.
+\item \textbf{Computer vision (first author):} Built face-mask and physical-distancing monitoring for construction video; fine-tuned TensorFlow Faster R-CNN detectors on a 3,300-image dataset (1,000 images self-collected and annotated) to \textbf{99.8\%} mask-classification accuracy, with perspective transforms for distance measurement.
+\item \textbf{OpenSync (open source, first author):} Built a Python platform on Lab Streaming Layer that synchronizes EEG, eye-tracking, physiological sensors, and experiment events; published tests measured RMS recording-time lag below 0.07 ms. Released on PyPI and GitHub.
+\end{itemize}
+
+\section{Selected Projects}
+\begin{itemize}
+\item \textbf{Inspecalytics (Founder \& Technical Lead, 2023 -- Present):} Scoped requirements with inspection clients and launched a product that cut inspection-report preparation time by \textbf{\textasciitilde 50\%}: SwiftUI iOS app, React/TypeScript web app, and Supabase (PostgreSQL) backend with offline edit conflict resolution, Apple Vision/ARKit photo organization, automated Word/PowerPoint reports, and XCTest/Vitest suites.
+\item \textbf{Business Action Prioritizer (Google ADK, Gemini, MCP):} Built a 4-stage agent workflow that turns business spreadsheets and a scoring rubric into ranked actions. A planning agent proposes the analysis and waits for user approval; an execution agent delegates to a PandasAI child agent; an MCP server delivers reports through signed Cloud Storage URLs; FastAPI/SQLite manage sessions.
+\item \textbf{On-device transformer for Apple Watch (mHELP, 2026):} Deployed a PyTorch-trained transformer through Core ML, reimplementing training-time preprocessing in Swift (300-point heart-rate sequences, 18 engineered features, exported scalers) for probability-based stress alerts.
+\item \textbf{Clink Social (Founder):} Built SwiftUI/MapKit discovery and messaging on Firebase, TypeScript Cloud Functions for feeds and notifications, and QR-based cross-device sign-in with time-limited OAuth/JWT tokens.
+\end{itemize}
+
+\section{Education}
+\textbf{Ph.D., Industrial Engineering} \textbar{} Texas A\&M University \textbar{} GPA 4.0/4.0 \hfill Dec 2023\par
+{\itshape Dissertation: Advancing Stress Detection: Real-Time, Naturalistic, and Personalized AI Approaches}\par\vspace{2pt}
+\textbf{Master of Engineering, Computer Engineering} \textbar{} Texas A\&M University \textbar{} GPA 4.0/4.0 \hfill May 2021\par\vspace{2pt}
+\textbf{B.S., Mechanical Engineering} \textbar{} Amirkabir University of Technology (Tehran Polytechnic) \hfill Jun 2018\par
+
+\section{Selected Publications}
+\textbf{Razavi, M.}, et al. Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. \textit{JMIR Mental Health}, 2024.\par\vspace{1.5pt}
+Janfaza, V., Weston, K., \textbf{Razavi, M.}, et al. MERCURY: Accelerating DNN Training by Exploiting Input Similarity. \textit{IEEE HPCA}, 2023.\par\vspace{1.5pt}
+\textbf{Razavi, M.}, et al. An Automatic System to Monitor the Physical Distance and Face Mask Wearing of Construction Workers in COVID-19 Pandemic. \textit{SN Computer Science}, 2022.\par\vspace{1.5pt}
+\textbf{Razavi, M.}, et al. OpenSync: An Open-Source Platform for Synchronizing Multiple Measures in Neuroscience Experiments. \textit{Journal of Neuroscience Methods}, 2022.\par\vspace{1.5pt}
+Peer reviewer: \textit{IEEE Journal of Biomedical and Health Informatics}; \textit{Transactions of the Institute of Measurement and Control}.\par
+
+\end{document}

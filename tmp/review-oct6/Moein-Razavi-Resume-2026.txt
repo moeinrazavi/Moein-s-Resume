@@ -1,0 +1,106 @@
+Moein Razavi, Ph.D.
+Senior AI/ML Engineer | Generative AI & Agentic Systems | Machine Learning | Google Cloud
+McKinney, TX (Dallas–Fort Worth) | (979) 676-7486 | razavi.moein94@gmail.com
+linkedin.com/in/moein-razavi | github.com/moeinrazavi | Google Scholar (500+ citations)
+SUMMARY
+AI/ML engineer with a Ph.D. and 8+ years of Python experience across industry and applied research, including 3+
+years at Ford building and running production AI on Google Cloud. Designs multi-agent LLM systems,
+retrieval-augmented generation (RAG), text-to-SQL, and document-extraction pipelines that have cut manual work by
+30–60%, and builds deep learning forecasting models in PyTorch. Delivers end to end, from ambiguous requirements to
+tested, deployed services (FastAPI, Docker, Cloud Run, Terraform, CI/CD), and has launched iOS and web products as
+a founder. Published researcher in machine learning, wearable sensing, and deep neural network training acceleration.
+TECHNICAL SKILLS
+Generative AI & Agents: Multi-agent systems, Google ADK, LangChain, LangGraph, Model Context Protocol (MCP),
+RAG, BM25 and vector search (FAISS, ChromaDB), text-to-SQL, tool calling, structured outputs, human-in-the-loop
+approval, LLM output validation; Gemini, GPT-4o, Claude
+Machine Learning: PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, Hugging Face, Optuna; transformers
+(PatchTST, TimesFM, iTransformer), time-series forecasting, computer vision (Faster R-CNN), Monte Carlo simulation,
+SHAP, Core ML
+Languages: Python, SQL, TypeScript/JavaScript, Swift, C++, Java
+Backend & Data: FastAPI, Flask, REST, WebSocket, Server-Sent Events, PySpark, Apache Airflow, BigQuery,
+Dataform, pandas, PostgreSQL, MongoDB, Supabase, Firebase
+Cloud & DevOps: Google Cloud (Vertex AI, Cloud Run, BigQuery, Dataproc, Cloud Storage), AWS (EC2, S3,
+Lambda), Docker, Kubernetes, Terraform, Tekton, GitHub Actions
+Security & Frontend: OAuth 2.0, JWT, SAML/ADFS SSO, role-based access control, PII redaction; React/Next.js,
+Dash, SwiftUI
+PROFESSIONAL EXPERIENCE
+Ford Motor Company
+Aug 2023 – Present
+Senior Data Scientist | Remote
+• Multi-agent analytics assistant: Cut time spent answering recurring analytics and document questions by 30% with
+a LangChain/GPT-4o system in which an intent router delegates to a schema-aware text-to-SQL agent over
+BigQuery and a BM25 RAG agent over legal documents and vehicle manuals; a checker agent validates answers
+against domain rules. Launched on Cloud Run behind SAML/ADFS single sign-on.
+• Document-to-data ingestion (HOMELOAD): Reduced manual data preparation by ~50% with a 5-agent
+Python/FastAPI service that converts inconsistent third-party utility bills (CSV, Excel, PDF, XML, HTML) into a
+standard schema using Gemini schema discovery, PII redaction, deterministic validation, bounded self-correcting
+retries, and idempotent BigQuery MERGE loads; deployed with Docker, Cloud Run, and Terraform.
+• AI code-review tooling: Reduced manual code-review time by 60% with a FastAPI service that parses repositories
+(GitPython, Python AST), streams LLM-assisted complexity reviews over Server-Sent Events, and estimates Vertex
+AI compute cost.
+• Transformer forecasting for energy-market bids: Reduced vehicle-availability forecast error by ~14% versus the
+previous baseline across ~9,500 vehicles by building PatchTST-style transformers in PyTorch, benchmarking
+TimesFM, MOIRAI-2, and iTransformer, and tuning with Optuna on Vertex AI GPUs. Monte Carlo capacity estimates
+and greedy vehicle selection feed ERCOT vehicle-to-grid market bids.
+• Distributed data pipelines: Build and maintain EV telemetry pipelines processing 10+ TB across 15 Airflow DAGs
+(PySpark on Dataproc, BigQuery, Dataform); debug production data issues end to end, including time-of-use rate
+and savings calculations behind smart-charging reports.
+• ML services: Delivered a utility-rate recommendation service with XGBoost bill predictions, Flask REST APIs on
+BigQuery, and a SAML-authenticated Dash front end, released on Cloud Run through Tekton CI/CD.
+CereVu Medical, Inc.
+Jun 2023 – Sep 2024
+Software Developer / Research Engineer (Contract) | Remote
+• Developed and launched two SwiftUI iOS apps (Vitality and Clinical) that capture 9 physiological signals from
+wearable sensors over CoreBluetooth BLE, distributed through TestFlight and App Store submissions.
+• Re-architected the Clinical app from UIKit to MVVM-Coordinator, adding sensor calibration, data export, role-based
+workflows (patient, physician, administrator), and OAuth 2.0/JWT authentication.
+• Built Python/Flask services with WebSocket streaming and MongoDB feeding a React/Next.js clinician dashboard;
+deployed Docker services on AWS EC2 with GitHub Actions CI/CD.
+Texas A&M University
+Sep 2018 – May 2024
+Graduate Research Assistant (Machine Learning, Wearable Sensing, Computer Vision) | College Station, TX
+• Wearable stress detection (first author): Built the modeling and evaluation pipeline for Apple Watch heart-rate and
+motion data from 50+ participants: participant-grouped cross-validation, bootstrap confidence intervals, permutation
+tests, fixed false-positive-rate operating points, and SHAP explanations across 6 model families.
+• MERCURY (IEEE HPCA 2023, co-author): Accelerated deep neural network training with random projection,
+quantization, and cached computation reuse; reported 1.97x average training speedup across 12 models at
+baseline-level accuracy.
+• Computer vision (first author): Built face-mask and physical-distancing monitoring for construction video;
+fine-tuned TensorFlow Faster R-CNN detectors on a 3,300-image dataset (1,000 images self-collected and
+annotated) to 99.8% mask-classification accuracy, with perspective transforms for distance measurement.
+• OpenSync (open source, first author): Built a Python platform on Lab Streaming Layer that synchronizes EEG,
+eye-tracking, physiological sensors, and experiment events; published tests measured RMS recording-time lag
+below 0.07 ms. Released on PyPI and GitHub.
+SELECTED PROJECTS
+• Inspecalytics (Founder & Technical Lead, 2023 – Present): Scoped requirements with inspection clients and
+launched a product that cut inspection-report preparation time by ~50%: SwiftUI iOS app, React/TypeScript web app,
+and Supabase (PostgreSQL) backend with offline edit conflict resolution, Apple Vision/ARKit photo organization,
+automated Word/PowerPoint reports, and XCTest/Vitest suites.
+• Business Action Prioritizer (Google ADK, Gemini, MCP): Built a 4-stage agent workflow that turns business
+spreadsheets and a scoring rubric into ranked actions. A planning agent proposes the analysis and waits for user
+approval; an execution agent delegates to a PandasAI child agent; an MCP server delivers reports through signed
+Cloud Storage URLs; FastAPI/SQLite manage sessions.
+• On-device transformer for Apple Watch (mHELP, 2026): Deployed a PyTorch-trained transformer through Core
+ML, reimplementing training-time preprocessing in Swift (300-point heart-rate sequences, 18 engineered features,
+exported scalers) for probability-based stress alerts.
+• Clink Social (Founder): Built SwiftUI/MapKit discovery and messaging on Firebase, TypeScript Cloud Functions for
+feeds and notifications, and QR-based cross-device sign-in with time-limited OAuth/JWT tokens.
+EDUCATION
+Ph.D., Industrial Engineering | Texas A&M University | GPA 4.0/4.0
+Dec 2023
+Dissertation: Advancing Stress Detection: Real-Time, Naturalistic, and Personalized AI Approaches
+Master of Engineering, Computer Engineering | Texas A&M University | GPA 4.0/4.0
+May 2021
+B.S., Mechanical Engineering | Amirkabir University of Technology (Tehran Polytechnic)
+Jun 2018
+SELECTED PUBLICATIONS
+Razavi, M., et al. Machine Learning, Deep Learning, and Data Preprocessing Techniques for Detecting, Predicting, and
+Monitoring Stress and Stress-Related Mental Disorders: Scoping Review. JMIR Mental Health, 2024.
+Janfaza, V., Weston, K., Razavi, M., et al. MERCURY: Accelerating DNN Training by Exploiting Input Similarity. IEEE
+HPCA, 2023.
+Razavi, M., et al. An Automatic System to Monitor the Physical Distance and Face Mask Wearing of Construction
+Workers in COVID-19 Pandemic. SN Computer Science, 2022.
+Razavi, M., et al. OpenSync: An Open-Source Platform for Synchronizing Multiple Measures in Neuroscience
+Experiments. Journal of Neuroscience Methods, 2022.
+Peer reviewer: IEEE Journal of Biomedical and Health Informatics; Transactions of the Institute of Measurement and
+Control.
